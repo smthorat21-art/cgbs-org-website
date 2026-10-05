@@ -4,493 +4,610 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CGBS | Chhatrapati Gramvikas Bhuuddhashiya Sanstha</title>
+<title>CHATRAPATI GRAMVIKAS BHAUUDDHASHIYA SANSTHA | CGBS</title>
 
-<meta name="description" content="Chhatrapati Gramvikas Bhuuddhashiya Sanstha - Promoting Social Progress and Better Life">
+<meta name="description"
+content="CGBS works to empower people and communities by creating opportunities in education, women empowerment, youth development, health, skills and social progress.">
 
 <style>
-:root{
-  --green:#087a4b;
-  --deep:#045538;
-  --light:#f4faf7;
-  --orange:#ef7d22;
-  --red:#d94b4b;
-  --text:#17352b;
-  --white:#ffffff;
-}
-
 *{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f7faf8;
-  color:var(--text);
-  line-height:1.5;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#173d2c;
+    background:#fff;
+    line-height:1.5;
 }
 
 a{
-  text-decoration:none;
-  color:inherit;
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
 }
 
 /* TOP BAR */
 .topbar{
-  background:var(--deep);
-  color:white;
-  padding:8px 16px;
-  font-size:13px;
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
+    background:#075b43;
+    color:white;
+    padding:8px 5%;
+    font-size:13px;
+    display:flex;
+    justify-content:space-between;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.topbar span{
+    margin-right:15px;
 }
 
 /* HEADER */
 header{
-  background:white;
-  position:sticky;
-  top:0;
-  z-index:1000;
-  box-shadow:0 2px 12px rgba(0,0,0,.08);
-}
-
-.nav{
-  max-width:1100px;
-  margin:auto;
-  padding:10px 16px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+    background:white;
+    padding:14px 5%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
 
 .brand{
-  display:flex;
-  align-items:center;
-  gap:10px;
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
 
 .brand img{
-  width:52px;
-  height:52px;
-  object-fit:contain;
-  margin-top:-6px;
+    width:75px;
+    height:75px;
+    object-fit:contain;
 }
 
-.brand-text{
-  font-weight:bold;
-  font-size:16px;
-  line-height:1.2;
+.brand-text h1{
+    font-size:20px;
+    color:#075b43;
+    line-height:1.2;
 }
 
-.brand-text small{
-  display:block;
-  font-weight:normal;
-  color:#6b7772;
-  margin-top:3px;
+.brand-text .marathi{
+    font-size:16px;
+    font-weight:bold;
+    color:#c96b18;
+    margin-top:4px;
 }
 
-.menu-btn{
-  background:#edf7f2;
-  border:0;
-  width:48px;
-  height:48px;
-  border-radius:14px;
-  font-size:25px;
-  color:var(--deep);
+.brand-text .tagline{
+    font-size:12px;
+    color:#555;
+}
+
+nav{
+    display:flex;
+    gap:22px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#c96b18;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
 }
 
 /* HERO */
 .hero{
-  min-height:420px;
-  padding:55px 22px;
-  display:flex;
-  align-items:center;
-  background:
-    linear-gradient(135deg,rgba(4,85,56,.96),rgba(8,122,75,.88)),
-    radial-gradient(circle at 80% 20%,#8bcf9e,transparent 40%);
-  color:white;
+    min-height:520px;
+    display:flex;
+    align-items:center;
+    padding:60px 6%;
+    background:
+        linear-gradient(90deg,rgba(247,250,239,.98) 0%,rgba(247,250,239,.90) 42%,rgba(247,250,239,.15) 75%),
+        url("mom-children.jpg") center/cover;
 }
 
-.hero-inner{
-  max-width:1100px;
-  width:100%;
-  margin:auto;
+.hero-content{
+    max-width:570px;
 }
 
-.hero h1{
-  font-family:Georgia,serif;
-  font-size:46px;
-  line-height:1.08;
-  max-width:600px;
-  margin-bottom:18px;
+.hero h2{
+    font-family:Georgia,serif;
+    font-size:62px;
+    line-height:1;
+    color:#075b43;
+    margin-bottom:22px;
+}
+
+.hero h2 span{
+    display:block;
 }
 
 .hero p{
-  font-size:18px;
-  max-width:620px;
-  margin-bottom:28px;
+    font-size:20px;
+    color:#234d3a;
+    margin-bottom:28px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-block;
-  padding:13px 22px;
-  border-radius:30px;
-  background:white;
-  color:var(--deep);
-  font-weight:bold;
-  margin-right:8px;
-  margin-bottom:8px;
+    display:inline-block;
+    padding:13px 24px;
+    border-radius:30px;
+    font-weight:bold;
+    border:2px solid #075b43;
+    transition:.3s;
 }
 
-.btn.green{
-  background:#20a96b;
-  color:white;
+.btn-primary{
+    background:#075b43;
+    color:white;
 }
 
-.btn.outline{
-  background:transparent;
-  border:1px solid rgba(255,255,255,.8);
-  color:white;
+.btn-primary:hover{
+    background:#c96b18;
+    border-color:#c96b18;
 }
 
-/* STATISTICS */
-.stats{
-  background:white;
-  padding:20px 12px;
+.btn-outline{
+    color:#075b43;
+    background:white;
 }
 
-.stats-grid{
-  max-width:1100px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:10px;
-}
-
-.stat{
-  text-align:center;
-  padding:15px 8px;
-}
-
-.stat-icon{
-  font-size:28px;
-  margin-bottom:5px;
-}
-
-.stat strong{
-  display:block;
-  font-size:21px;
-  color:var(--green);
-}
-
-.stat span{
-  font-size:12px;
-  color:#68736e;
-}
-
-/* GENERAL SECTION */
-section{
-  padding:45px 18px;
-}
-
-.container{
-  max-width:1100px;
-  margin:auto;
+/* VALUES */
+.values{
+    background:#fff8eb;
+    padding:38px 6%;
+    text-align:center;
 }
 
 .section-title{
-  font-family:Georgia,serif;
-  font-size:30px;
-  margin-bottom:8px;
+    font-family:Georgia,serif;
+    font-size:34px;
+    color:#075b43;
+    margin-bottom:25px;
 }
 
-.section-subtitle{
-  color:#68736e;
-  margin-bottom:25px;
+.value-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    max-width:1000px;
+    margin:auto;
 }
 
-/* FOCUS */
-.focus-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:12px;
+.value{
+    padding:15px;
 }
 
-.focus-card{
-  background:white;
-  border-radius:18px;
-  padding:20px 12px;
-  text-align:center;
-  box-shadow:0 3px 14px rgba(0,0,0,.07);
-  transition:.2s;
+.value-icon{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    margin:auto auto 10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    background:#e7f3e6;
 }
 
-.focus-card:hover{
-  transform:translateY(-3px);
+.value h3{
+    color:#075b43;
+    font-size:24px;
 }
 
-.focus-icon{
-  font-size:30px;
-  margin-bottom:8px;
+/* INITIATIVES */
+.initiatives{
+    padding:55px 5%;
 }
 
-.focus-card h3{
-  font-size:15px;
+.section-heading{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:25px;
+    gap:15px;
 }
 
-/* ENTREPRENEURSHIP */
-.enterprise{
-  background:#eef8f2;
+.section-heading p{
+    color:#555;
 }
 
-.enterprise-box{
-  background:white;
-  border-radius:24px;
-  padding:28px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:25px;
-  align-items:center;
-  box-shadow:0 4px 18px rgba(0,0,0,.06);
+.cards{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:14px;
 }
 
-.enterprise-box h2{
-  font-family:Georgia,serif;
-  font-size:29px;
-  margin-bottom:12px;
+.card{
+    border-radius:15px;
+    overflow:hidden;
+    background:white;
+    box-shadow:0 3px 15px rgba(0,0,0,.12);
+    transition:.3s;
+    border:1px solid #eee;
 }
 
-.enterprise-box p{
-  color:#5d6b65;
-  margin-bottom:18px;
+.card:hover{
+    transform:translateY(-5px);
 }
 
-.product-list{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-  margin-bottom:18px;
+.card-img{
+    height:165px;
+    overflow:hidden;
 }
 
-.product{
-  background:#f5faf7;
-  padding:12px;
-  border-radius:12px;
-  font-size:14px;
+.card-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 
-/* PROGRAM CARDS */
-.program-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
+.card-body{
+    padding:15px;
+    text-align:center;
 }
 
-.program{
-  background:white;
-  border-radius:22px;
-  padding:25px;
-  box-shadow:0 4px 18px rgba(0,0,0,.07);
+.card-body h3{
+    color:#075b43;
+    font-size:18px;
+    margin-bottom:7px;
 }
 
-.program.aim{
-  border-top:5px solid var(--orange);
+.card-body p{
+    font-size:13px;
+    color:#555;
+    min-height:58px;
 }
 
-.program.mom{
-  border-top:5px solid var(--red);
+.card-btn{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 18px;
+    border-radius:20px;
+    background:#075b43;
+    color:white;
+    font-size:13px;
+    font-weight:bold;
 }
 
-.program-icon{
-  font-size:40px;
-  margin-bottom:8px;
+/* SUPPORT */
+.support{
+    background:#edf8ea;
+    padding:50px 5%;
 }
 
-.program h2{
-  font-family:Georgia,serif;
-  margin-bottom:8px;
+.support-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
 }
 
-.program p{
-  color:#66736d;
-  margin-bottom:18px;
+.support-card{
+    background:white;
+    padding:25px 18px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,.06);
 }
 
-.program .btn{
-  background:var(--green);
-  color:white;
-  margin:0;
+.support-icon{
+    font-size:36px;
+    margin-bottom:10px;
 }
 
-/* NEEDY */
-.needy{
-  background:#fff8ef;
+.support-card h3{
+    color:#075b43;
+    font-size:18px;
+    margin-bottom:8px;
 }
 
-.needy-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
+.support-card p{
+    font-size:14px;
+    color:#555;
 }
 
-.needy-card{
-  background:white;
-  padding:25px;
-  border-radius:20px;
-  box-shadow:0 3px 15px rgba(0,0,0,.07);
+/* WHO WE SUPPORT */
+.who{
+    padding:50px 5%;
+    text-align:center;
 }
 
-.needy-card h3{
-  font-size:21px;
-  margin:8px 0;
+.who-grid{
+    display:grid;
+    grid-template-columns:repeat(8,1fr);
+    gap:15px;
 }
 
-.needy-card p{
-  color:#68736e;
-  margin-bottom:15px;
+.who-item{
+    font-size:13px;
+    font-weight:bold;
 }
 
-/* VRUDHASHRAM */
-.vrudhashram{
-  background:#f3f1e9;
+.who-icon{
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:#eef5f0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0 auto 8px;
+    font-size:28px;
 }
 
-.vrud-box{
-  background:white;
-  border-radius:24px;
-  padding:30px;
-  text-align:center;
-  max-width:800px;
-  margin:auto;
-  box-shadow:0 4px 18px rgba(0,0,0,.06);
+/* PROJECTS */
+.projects{
+    padding:50px 5%;
+    background:#f1faf8;
 }
 
-.vrud-box .icon{
-  font-size:48px;
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
 }
 
-.vrud-box h2{
-  font-family:Georgia,serif;
-  margin:8px 0;
+.project{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
 }
 
-.vrud-box p{
-  color:#68736e;
-  margin-bottom:20px;
+.project img{
+    width:100%;
+    height:130px;
+    object-fit:cover;
+}
+
+.project h3{
+    padding:12px;
+    font-size:15px;
+}
+
+/* ABOUT */
+.about{
+    padding:60px 6%;
+    background:#fff8ed;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:45px;
+}
+
+.about h2{
+    font-family:Georgia,serif;
+    font-size:38px;
+    color:#075b43;
+    margin-bottom:18px;
+}
+
+.about p{
+    color:#444;
+    margin-bottom:15px;
+}
+
+.about-highlight{
+    border-left:5px solid #c96b18;
+    padding-left:15px;
+    font-weight:bold;
+    color:#075b43;
+}
+
+/* CTA */
+.cta{
+    padding:55px 6%;
+    background:#075b43;
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-family:Georgia,serif;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.cta p{
+    max-width:650px;
+    margin:0 auto 25px;
+}
+
+.cta .btn{
+    background:white;
+    color:#075b43;
+    border:none;
+    margin:5px;
 }
 
 /* FOOTER */
 footer{
-  background:var(--deep);
-  color:white;
-  padding:35px 18px;
+    background:#063c2e;
+    color:white;
+    padding:35px 6%;
 }
 
-.footer-inner{
-  max-width:1100px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:2fr 1fr 1fr;
-  gap:25px;
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
 }
 
 footer h3{
-  margin-bottom:10px;
+    margin-bottom:12px;
 }
 
-footer p, footer a{
-  color:#d8ebe2;
-  font-size:14px;
-}
-
-.footer-links a{
-  display:block;
-  margin:5px 0;
+footer p,
+footer a{
+    font-size:14px;
+    color:#d9e9e2;
+    display:block;
+    margin:5px 0;
 }
 
 .copyright{
-  text-align:center;
-  border-top:1px solid rgba(255,255,255,.2);
-  margin-top:25px;
-  padding-top:18px;
-  font-size:12px;
-  color:#c9ddd5;
+    border-top:1px solid rgba(255,255,255,.2);
+    margin-top:25px;
+    padding-top:15px;
+    text-align:center;
+    font-size:12px;
 }
 
 /* MOBILE */
-@media(max-width:700px){
+@media(max-width:900px){
 
-  .topbar{
-    font-size:11px;
-  }
+    nav{
+        display:none;
+    }
 
-  .brand img{
-    width:48px;
-    height:48px;
-  }
+    .menu{
+        display:block;
+    }
 
-  .brand-text{
-    font-size:14px;
-    max-width:230px;
-  }
+    .brand-text h1{
+        font-size:15px;
+    }
 
-  .hero{
-    min-height:420px;
-    padding:45px 20px;
-  }
+    .brand-text .marathi{
+        font-size:13px;
+    }
 
-  .hero h1{
-    font-size:38px;
-  }
+    .brand-text .tagline{
+        font-size:10px;
+    }
 
-  .hero p{
-    font-size:16px;
-  }
+    .brand img{
+        width:60px;
+        height:60px;
+    }
 
-  .stats-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+    .hero{
+        min-height:500px;
+        padding:45px 7%;
+        background:
+            linear-gradient(rgba(247,250,239,.88),rgba(247,250,239,.72)),
+            url("mom-children.jpg") center/cover;
+    }
 
-  .focus-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
+    .hero h2{
+        font-size:47px;
+    }
 
-  .enterprise-box{
-    grid-template-columns:1fr;
-    padding:22px;
-  }
+    .hero p{
+        font-size:17px;
+    }
 
-  .enterprise-box h2{
-    font-size:25px;
-  }
+    .value-grid{
+        grid-template-columns:1fr;
+    }
 
-  .program-grid,
-  .needy-grid{
-    grid-template-columns:1fr;
-  }
+    .cards{
+        grid-template-columns:1fr 1fr;
+    }
 
-  .product-list{
-    grid-template-columns:1fr 1fr;
-  }
+    .card-img{
+        height:135px;
+    }
 
-  .footer-inner{
-    grid-template-columns:1fr;
-  }
+    .support-grid{
+        grid-template-columns:1fr 1fr;
+    }
 
-  section{
-    padding:38px 15px;
-  }
+    .who-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
 
-  .section-title{
-    font-size:27px;
-  }
+    .project-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:520px){
+
+    .topbar{
+        justify-content:center;
+        text-align:center;
+        font-size:11px;
+    }
+
+    header{
+        padding:10px 4%;
+    }
+
+    .hero{
+        min-height:480px;
+    }
+
+    .hero h2{
+        font-size:42px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .section-heading{
+        display:block;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .card-img{
+        height:190px;
+    }
+
+    .support-grid{
+        grid-template-columns:1fr;
+    }
+
+    .who-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about h2{
+        font-size:30px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
 }
 </style>
 </head>
@@ -499,365 +616,582 @@ footer p, footer a{
 
 <!-- TOP BAR -->
 <div class="topbar">
-  <span>✉ support@cgbs-org.in</span>
-  <span>📍 Pune, Maharashtra, India</span>
+    <div>
+        <span>✉ support@cgbs-org.in</span>
+        <span>│</span>
+        <span>📍 Pune, Maharashtra, India</span>
+    </div>
+    <div>
+        <span>Facebook</span>
+        <span>Instagram</span>
+        <span>YouTube</span>
+        <span>LinkedIn</span>
+    </div>
 </div>
+
 
 <!-- HEADER -->
 <header>
-  <div class="nav">
 
-    <a class="brand" href="CGBS_Homepage_v2.html">
-      <img src="CGBS-logo.png" alt="CGBS Logo">
-      <div class="brand-text">
-        CHATRAPATI GRAMVIKAS<br>
-        BHUUDDHASHIYA SANSTHA
-        <small>Promoting Social Progress and Better Life</small>
-      </div>
-    </a>
+    <a href="index.html" class="brand">
 
-    <button class="menu-btn" onclick="alert('Menu pages will be connected next.')">
-      ☰
-    </button>
+        <img src="CGBS-logo.png" alt="CGBS Logo">
 
-  </div>
-</header>
+        <div class="brand-text">
 
-<!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-inner">
+            <h1>
+                CHATRAPATI GRAMVIKAS<br>
+                BHAUUDDHASHIYA SANSTHA (CGBS)
+            </h1>
 
-    <h1>
-      People.<br>
-      Progress.<br>
-      Possibilities.
-    </h1>
+            <div class="marathi">
+                सेवा • सामर्थ्य • संस्कार
+            </div>
 
-    <p>
-      Educate • Empower • Support<br>
-      for a Brighter Tomorrow
-    </p>
+            <div class="tagline">
+                Promoting Social Progress and Better Life.
+            </div>
 
-    <a href="#focus" class="btn">Explore Our Work →</a>
-    <a href="#about" class="btn outline">About CGBS</a>
-
-  </div>
-</section>
-
-<!-- STATISTICS -->
-<section class="stats">
-  <div class="stats-grid">
-
-    <div class="stat">
-      <div class="stat-icon">🤝</div>
-      <strong>20+</strong>
-      <span>Years of Social Service</span>
-    </div>
-
-    <div class="stat">
-      <div class="stat-icon">📋</div>
-      <strong>50+</strong>
-      <span>Programs & Initiatives</span>
-    </div>
-
-    <div class="stat">
-      <div class="stat-icon">👥</div>
-      <strong>Communities</strong>
-      <span>Across Maharashtra</span>
-    </div>
-
-    <div class="stat">
-      <div class="stat-icon">❤️</div>
-      <strong>Better Lives</strong>
-      <span>Our Continuing Effort</span>
-    </div>
-
-  </div>
-</section>
-
-<!-- FOCUS AREAS -->
-<section id="focus">
-  <div class="container">
-
-    <h2 class="section-title">Our Focus Areas</h2>
-    <p class="section-subtitle">
-      Working with communities for inclusive and sustainable social progress.
-    </p>
-
-    <div class="focus-grid">
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">📚</div>
-        <h3>Education & Learning</h3>
-      </a>
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">🌿</div>
-        <h3>Health & Nutrition</h3>
-      </a>
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">👩‍🌾</div>
-        <h3>Women Empowerment</h3>
-      </a>
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">🌾</div>
-        <h3>Tribal Development</h3>
-      </a>
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">👵</div>
-        <h3>Senior Citizens Welfare</h3>
-      </a>
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">🛠️</div>
-        <h3>Skill & Livelihood</h3>
-      </a>
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">🌍</div>
-        <h3>Environment</h3>
-      </a>
-
-      <a class="focus-card" href="focus-areas.html">
-        <div class="focus-icon">💻</div>
-        <h3>Digital Inclusion</h3>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- WOMEN & TRIBAL ENTREPRENEURSHIP -->
-<section class="enterprise" id="entrepreneurship">
-
-  <div class="container">
-
-    <div class="enterprise-box">
-
-      <div>
-        <h2>Women & Tribal Entrepreneurship</h2>
-
-        <p>
-          From Home Craft to Market — supporting women and tribal
-          entrepreneurs to create, promote and sell their products.
-        </p>
-
-        <div class="product-list">
-          <div class="product">🧵 Recycled Fabrics</div>
-          <div class="product">🪔 Agarbatti Products</div>
-          <div class="product">🧺 Handmade Crafts</div>
-          <div class="product">🌾 Rural Products</div>
         </div>
 
-        <a href="#shop" class="btn green">
-          Explore Our Products →
-        </a>
-      </div>
+    </a>
 
-      <div id="shop" style="text-align:center;font-size:80px;">
-        🧵<br>
-        🪔
-      </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="focus-areas.html">Our Work</a>
+        <a href="#support">Get Involved</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="menu">☰</div>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h2>
+            <span>People.</span>
+            <span>Progress.</span>
+            <span>Possibilities.</span>
+        </h2>
+
+        <p>
+            <strong>Educate • Empower • Support</strong><br>
+            Creating opportunities for a brighter tomorrow.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="focus-areas.html" class="btn btn-primary">
+                Explore Our Work →
+            </a>
+
+            <a href="about.html" class="btn btn-outline">
+                About CGBS
+            </a>
+
+        </div>
 
     </div>
 
-  </div>
 </section>
 
-<!-- AIM + MOM -->
-<section>
 
-  <div class="container">
+<!-- VALUES -->
+<section class="values">
 
-    <h2 class="section-title">Our Community Initiatives</h2>
-    <p class="section-subtitle">
-      Programs designed to support individuals, families and communities.
+    <h2 class="section-title">
+        Our Values Guide Our Work
+    </h2>
+
+    <div class="value-grid">
+
+        <div class="value">
+            <div class="value-icon">🤝</div>
+            <h3>सेवा</h3>
+            <p>
+                Serving people and communities with dignity and care.
+            </p>
+        </div>
+
+        <div class="value">
+            <div class="value-icon">🌱</div>
+            <h3>सामर्थ्य</h3>
+            <p>
+                Building skills, confidence, capability and independence.
+            </p>
+        </div>
+
+        <div class="value">
+            <div class="value-icon">📖</div>
+            <h3>संस्कार</h3>
+            <p>
+                Creating responsible, compassionate and empowered communities.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- KEY INITIATIVES -->
+<section class="initiatives">
+
+    <div class="section-heading">
+
+        <div>
+            <h2 class="section-title">
+                Our Key Initiatives
+            </h2>
+
+            <p>
+                Building stronger individuals, families and communities.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="cards">
+
+
+        <!-- WOMEN -->
+        <a href="women-tribal-products.html" class="card">
+
+            <div class="card-img">
+                <img src="matoshree.jpg"
+                     alt="Women Empowerment">
+            </div>
+
+            <div class="card-body">
+
+                <h3>Support Women Entrepreneurs</h3>
+
+                <p>
+                    Buy • Promote • Mentor<br>
+                    Build Markets
+                </p>
+
+                <span class="card-btn">
+                    Explore →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- AIM -->
+        <a href="aim.html" class="card">
+
+            <div class="card-img">
+                <img src="aim-hero-poster.png"
+                     alt="AIM Youth De-Addiction">
+            </div>
+
+            <div class="card-body">
+
+                <h3>AIM</h3>
+
+                <p>
+                    Youth De-Addiction<br>
+                    Awareness & Support
+                </p>
+
+                <span class="card-btn">
+                    Explore →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- MOM -->
+        <a href="mom.html" class="card">
+
+            <div class="card-img">
+                <img src="mom-hero.jpg"
+                     alt="MOM Family Programme">
+            </div>
+
+            <div class="card-body">
+
+                <h3>MOM</h3>
+
+                <p>
+                    Family Communication<br>
+                    & Positive Engagement
+                </p>
+
+                <span class="card-btn">
+                    Explore →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- YOUTH -->
+        <a href="youth-support.html" class="card">
+
+            <div class="card-img">
+                <img src="aim-youth.jpg"
+                     alt="Youth Support">
+            </div>
+
+            <div class="card-body">
+
+                <h3>Support Growing Youth & Talent</h3>
+
+                <p>
+                    Youth • Athletes • Artists<br>
+                    Researchers • Innovators
+                </p>
+
+                <span class="card-btn">
+                    Explore →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- GOLDEN EVE -->
+        <a href="golden-eve.html" class="card">
+
+            <div class="card-img">
+                <img src="golden-eve-admission-hero.png"
+                     alt="Golden Eve Care Centres">
+            </div>
+
+            <div class="card-body">
+
+                <h3>Golden Eve Care Centres</h3>
+
+                <p>
+                    Care • Dignity • Support<br>
+                    Pune • Satara
+                </p>
+
+                <span class="card-btn">
+                    View Care Centres →
+                </span>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- SUPPORT -->
+<section class="support" id="support">
+
+    <h2 class="section-title" style="text-align:center;">
+        Support Through Empowerment
+    </h2>
+
+    <p style="text-align:center;margin-bottom:30px;">
+        There are many meaningful ways to become part of someone's journey.
     </p>
 
-    <div class="program-grid">
 
-      <!-- AIM -->
-      <div class="program aim">
+    <div class="support-grid">
 
-        <div class="program-icon">🌱</div>
+        <div class="support-card">
 
-        <h2>AIM</h2>
+            <div class="support-icon">₹</div>
 
-        <p>
-          <strong>Youth De-Addiction Workshop</strong><br>
-          Awareness, guidance and positive engagement for young people
-          and families.
-        </p>
+            <h3>Provide Financial Support</h3>
 
-        <a href="#" class="btn">
-          Workshop Enrolment →
-        </a>
+            <p>
+                Help create opportunities where financial support is needed.
+            </p>
 
-      </div>
+        </div>
 
-      <!-- MOM -->
-      <div class="program mom">
 
-        <div class="program-icon">❤️</div>
+        <div class="support-card">
 
-        <h2>MOM</h2>
+            <div class="support-icon">🛒</div>
 
-        <p>
-          <strong>Family Communication Workshop</strong><br>
-          Encouraging healthy communication, understanding and stronger
-          family relationships.
-        </p>
+            <h3>Buy • Provide • Equip</h3>
 
-        <a href="#" class="btn">
-          Workshop Enrolment →
-        </a>
+            <p>
+                Support by buying products or providing useful resources,
+                equipment and aids.
+            </p>
 
-      </div>
+        </div>
+
+
+        <div class="support-card">
+
+            <div class="support-icon">👥</div>
+
+            <h3>Give Your Time & Skills</h3>
+
+            <p>
+                Teach • Mentor • Guide • Train • Upskill.
+            </p>
+
+        </div>
+
+
+        <div class="support-card">
+
+            <div class="support-icon">🤝</div>
+
+            <h3>Partner With CGBS</h3>
+
+            <p>
+                CSR • Institutions • Professionals • Organisations.
+            </p>
+
+        </div>
 
     </div>
 
-  </div>
+</section>
+
+
+<!-- WHO WE SUPPORT -->
+<section class="who">
+
+    <h2 class="section-title">
+        Who We Support
+    </h2>
+
+    <div class="who-grid">
+
+        <div class="who-item">
+            <div class="who-icon">👩</div>
+            Women<br>Entrepreneurs
+        </div>
+
+        <div class="who-item">
+            <div class="who-icon">👧</div>
+            Children<br>& Students
+        </div>
+
+        <div class="who-item">
+            <div class="who-icon">🧑</div>
+            Youth
+        </div>
+
+        <div class="who-item">
+            <div class="who-icon">🏃</div>
+            Athletes
+        </div>
+
+        <div class="who-item">
+            <div class="who-icon">🎨</div>
+            Artists
+        </div>
+
+        <div class="who-item">
+            <div class="who-icon">🔬</div>
+            Researchers<br>& Innovators
+        </div>
+
+        <div class="who-item">
+            <div class="who-icon">👵</div>
+            Senior<br>Citizens
+        </div>
+
+        <div class="who-item">
+            <div class="who-icon">🌍</div>
+            Vulnerable<br>Communities
+        </div>
+
+    </div>
 
 </section>
 
-<!-- NEEDY SUPPORT -->
-<section class="needy" id="needy">
 
-  <div class="container">
+<!-- UPCOMING PROJECTS -->
+<section class="projects">
 
-    <h2 class="section-title">Needy Support</h2>
+    <h2 class="section-title">
+        Upcoming Projects
+    </h2>
 
-    <p class="section-subtitle">
-      Connecting genuine needs with people who are willing to support.
+    <p style="margin-bottom:25px;">
+        Creating new opportunities for education, skills, innovation and livelihoods.
     </p>
 
-    <div class="needy-grid">
+    <div class="project-grid">
 
-      <div class="needy-card">
+        <div class="project">
+            <img src="aim-classroom.jpg" alt="Rural STEM">
+            <h3>Rural STEM & Robotics</h3>
+        </div>
 
-        <div style="font-size:42px;">🤲</div>
+        <div class="project">
+            <img src="matoshree.jpg" alt="Tribal Skill Development">
+            <h3>Tribal Skill Development</h3>
+        </div>
 
-        <h3>Needy Candidates</h3>
+        <div class="project">
+            <img src="aim-youth.jpg" alt="Digital Learning">
+            <h3>Digital & AI Learning</h3>
+        </div>
 
-        <p>
-          View verified or documented support needs of athletes,
-          artists, students and other deserving individuals.
-        </p>
-
-        <a href="#" class="btn green">
-          View Needy List →
-        </a>
-
-      </div>
-
-      <div class="needy-card">
-
-        <div style="font-size:42px;">📝</div>
-
-        <h3>Request Support</h3>
-
-        <p>
-          Are you an athlete, artist, student or individual in genuine
-          need of assistance? Submit your request to CGBS.
-        </p>
-
-        <a href="#" class="btn green">
-          Submit Your Request →
-        </a>
-
-      </div>
+        <div class="project">
+            <img src="mom-children.jpg" alt="Women Livelihood">
+            <h3>Women Livelihood Development</h3>
+        </div>
 
     </div>
 
-  </div>
+    <br>
+
+    <a href="upcoming-projects.html"
+       class="btn btn-primary">
+       View Upcoming Projects →
+    </a>
 
 </section>
 
-<!-- VRUDHASHRAM -->
-<section class="vrudhashram">
-
-  <div class="container">
-
-    <div class="vrud-box">
-
-      <div class="icon">👵❤️</div>
-
-      <h2>Vrudhashram</h2>
-
-      <p>
-        A Home with Care and Dignity — supporting senior citizens with
-        respect, care and a meaningful life.
-      </p>
-
-      <a href="#" class="btn green">
-        Admission Enquiry →
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
 
 <!-- ABOUT -->
-<section id="about" 
-  style="scroll-margin-top:220px;">
+<section class="about">
 
-  <div class="container">
+    <div class="about-grid">
 
-    <h2 class="section-title">About CGBS</h2>
+        <div>
 
-    <p class="section-subtitle">
-      Chatrapati Gramvikas Bhuuddhashiya Sanstha (CGBS) works toward
-      social progress and better life through education, health,
-      livelihood, women empowerment, tribal development and community
-      initiatives.
-    </p>
+            <h2>About CGBS</h2>
 
-  </div>
+            <p>
+                Chhatrapati Gramvikas Bahuuddeshiya Sanstha (CGBS)
+                works towards social progress and a better life by
+                supporting education, empowerment, health, skills,
+                livelihood and community development.
+            </p>
+
+            <p class="about-highlight">
+                Our purpose is not simply to give support,
+                but to create opportunities that help people become
+                capable, confident, independent and self-reliant.
+            </p>
+
+            <a href="about.html"
+               class="btn btn-primary">
+                Read Our Story →
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <img src="mom-children.jpg"
+                 alt="CGBS Community Work"
+                 style="border-radius:20px;">
+
+        </div>
+
+    </div>
 
 </section>
+
+
+<!-- CTA -->
+<section class="cta">
+
+    <h2>
+        Together, We Can Create Opportunities.
+    </h2>
+
+    <p>
+        Be part of someone's growth — through your support,
+        skills, time, resources or partnership.
+    </p>
+
+    <a href="request-support.html" class="btn">
+        Request Support
+    </a>
+
+    <a href="contact.html" class="btn">
+        Partner With CGBS
+    </a>
+
+</section>
+
 
 <!-- FOOTER -->
 <footer>
 
-  <div class="footer-inner">
+    <div class="footer-grid">
 
-    <div>
-      <h3>CGBS</h3>
-      <p>
-        CHATRAPATI GRAMVIKAS BHUUDDHASHIYA SANSTHA
-      </p>
-      <p style="margin-top:8px;">
-        Promoting Social Progress and Better Life
-      </p>
+        <div>
+
+            <h3>
+                CHATRAPATI GRAMVIKAS
+                BHAUUDDHASHIYA SANSTHA
+            </h3>
+
+            <p>
+                सेवा • सामर्थ्य • संस्कार
+            </p>
+
+            <p>
+                Promoting Social Progress and Better Life.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="focus-areas.html">Our Work</a>
+            <a href="gallery.html">Gallery</a>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>📍 Pune, Maharashtra, India</p>
+            <p>✉ support@cgbs-org.in</p>
+            <p>🌐 cgbs-org.in</p>
+
+        </div>
+
     </div>
 
-    <div class="footer-links">
-      <h3>Quick Links</h3>
-      <a href="#home">Home</a>
-      <a href="#focus">Focus Areas</a>
-      <a href="#entrepreneurship">Women & Tribal Entrepreneurship</a>
-      <a href="#needy">Needy Support</a>
+
+    <div class="copyright">
+
+        © 2026 Chhatrapati Gramvikas Bahuuddeshiya Sanstha (CGBS).
+        All Rights Reserved.
+
     </div>
-
-    <div>
-      <h3>Contact</h3> 8600190870
-      <p>📍 Pune, Maharashtra, India</p>
-      <p>✉ support@cgbs-org.in</p>
-      <p>🌐 cgbs-org.in</p>
-    </div>
-
-  </div>
-
-  <div class="copyright">
-    © CGBS — Chatrapati Gramvikas Bhauuddhashiya Sanstha. All Rights Reserved.
-  </div>
 
 </footer>
+
+
+<!-- SUPPORT WIDGET -->
+<script src="./support-widget.js?v=2"></script>
 
 </body>
 </html>
