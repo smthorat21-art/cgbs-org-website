@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>
-CHATRAPATI GRAMVIKAS BHAUUDDHASHIYA SANSTHA | CGBS
-</title>
+<title>CHATRAPATI GRAMVIKAS BHAUUDDHASHIYA SANSTHA | CGBS</title>
 
 <meta name="description"
-content="CGBS works towards social progress and a better life by creating opportunities in education, skills, health, women empowerment, youth development, livelihoods and community development.">
+content="CGBS works to empower people and communities through education, skills, livelihood, family wellbeing, youth development and leadership opportunities.">
 
 <style>
 
@@ -28,10 +22,10 @@ html{
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color:#173d2c;
     background:#ffffff;
-    line-height:1.55;
+    line-height:1.6;
 }
 
 a{
@@ -44,595 +38,472 @@ img{
     display:block;
 }
 
-
 /* ================= TOP BAR ================= */
 
 .topbar{
-    background:#075b43;
-    color:#fff;
-    padding:7px 5%;
+    background:#087451;
+    color:#ffffff;
+    padding:8px 5%;
+    font-size:13px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
     gap:8px;
-    font-size:11px;
 }
 
+.topbar-right{
+    display:flex;
+    gap:16px;
+}
 
 /* ================= HEADER ================= */
 
 header{
-    background:#fff;
-    padding:10px 4%;
+    background:#ffffff;
+    padding:16px 5%;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    box-shadow:0 3px 15px rgba(0,0,0,0.08);
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 12px rgba(0,0,0,.10);
 }
 
 .brand{
     display:flex;
     align-items:center;
-    gap:14px;
+    gap:18px;
 }
 
 .brand img{
-    width:100px;
-    height:100px;
+    width:105px;
+    height:105px;
     object-fit:contain;
-    flex-shrink:0;
 }
 
 .brand-text h1{
-    font-size:20px;
-    line-height:1.16;
-    color:#075b43;
+    color:#056b50;
+    font-size:23px;
+    line-height:1.15;
+    margin-bottom:6px;
 }
 
-.marathi{
-    color:#c96b18;
-    font-size:15px;
+.brand-text .tagline{
+    color:#c46b21;
+    font-size:17px;
     font-weight:bold;
-    margin-top:5px;
+    margin-bottom:3px;
 }
 
-.tagline{
+.brand-text .english-tagline{
     color:#666;
-    font-size:11px;
-    margin-top:2px;
+    font-size:13px;
 }
 
 nav{
     display:flex;
+    gap:22px;
     align-items:center;
-    gap:20px;
-    font-size:13px;
+}
+
+nav a{
+    font-size:14px;
     font-weight:bold;
+    color:#254d3d;
 }
 
 nav a:hover{
-    color:#c96b18;
+    color:#07805d;
 }
 
 .menu-btn{
     display:none;
-    border:0;
-    background:none;
-    color:#075b43;
-    font-size:30px;
-    cursor:pointer;
+    font-size:32px;
+    color:#087451;
 }
-
-.mobile-menu{
-    display:none;
-}
-
 
 /* ================= HERO ================= */
 
 .hero{
     min-height:500px;
+    position:relative;
     display:flex;
     align-items:center;
-    padding:65px 6%;
-
+    overflow:hidden;
     background:
-    linear-gradient(
-        90deg,
-        rgba(248,250,240,.97) 0%,
-        rgba(248,250,240,.90) 42%,
-        rgba(248,250,240,.25) 100%
-    ),
-    url("program-02.jpg") center/cover no-repeat;
+        linear-gradient(90deg,
+        rgba(255,255,255,0.94) 0%,
+        rgba(255,255,255,0.80) 45%,
+        rgba(255,255,255,0.15) 100%),
+        url("women-entrepreneurs.jpg") center/cover no-repeat;
 }
 
 .hero-content{
-    max-width:580px;
+    width:50%;
+    padding:70px 5%;
 }
 
 .hero h2{
     font-family:Georgia,serif;
-    font-size:60px;
-    line-height:1.02;
-    color:#075b43;
+    font-size:55px;
+    line-height:1.05;
+    color:#056b50;
     margin-bottom:20px;
 }
 
-.hero p{
-    font-size:19px;
-    color:#254c3b;
-    margin-bottom:25px;
+.hero .lead{
+    font-size:21px;
+    font-weight:bold;
+    color:#184b38;
+    margin-bottom:8px;
 }
 
-.hero-buttons{
+.hero p{
+    font-size:17px;
+    color:#4e5d57;
+    max-width:560px;
+}
+
+.buttons{
+    margin-top:28px;
     display:flex;
-    gap:12px;
+    gap:15px;
     flex-wrap:wrap;
 }
 
 .btn{
     display:inline-block;
-    padding:12px 22px;
-    border-radius:28px;
-    border:2px solid #075b43;
+    padding:13px 25px;
+    border-radius:30px;
     font-weight:bold;
-    font-size:14px;
-    transition:.25s;
+    background:#087451;
+    color:#ffffff;
+    transition:0.2s;
 }
 
-.btn-primary{
-    background:#075b43;
-    color:#fff;
-}
-
-.btn-primary:hover{
-    background:#c96b18;
-    border-color:#c96b18;
+.btn:hover{
+    transform:translateY(-2px);
+    background:#055c41;
 }
 
 .btn-outline{
-    background:#fff;
-    color:#075b43;
+    background:#ffffff;
+    color:#087451;
+    border:2px solid #087451;
 }
 
-.btn-outline:hover{
-    background:#075b43;
-    color:#fff;
+/* ================= SECTION ================= */
+
+section{
+    padding:70px 5%;
 }
 
+.section-title{
+    text-align:center;
+    font-family:Georgia,serif;
+    font-size:38px;
+    color:#056b50;
+    margin-bottom:12px;
+}
+
+.section-subtitle{
+    text-align:center;
+    color:#68756f;
+    max-width:720px;
+    margin:0 auto 40px;
+}
 
 /* ================= INITIATIVES ================= */
 
 .initiatives{
-    padding:55px 5%;
-}
-
-.section-title{
-    font-family:Georgia,serif;
-    font-size:34px;
-    color:#075b43;
-    margin-bottom:10px;
-}
-
-.section-heading{
-    margin-bottom:25px;
-}
-
-.section-heading p{
-    color:#666;
+    background:#ffffff;
 }
 
 .cards{
+    max-width:1200px;
+    margin:auto;
     display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:15px;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
 }
 
 .card{
-    background:#fff;
-    border:1px solid #eee;
-    border-radius:15px;
+    background:#ffffff;
+    border-radius:18px;
     overflow:hidden;
-    box-shadow:0 3px 14px rgba(0,0,0,.10);
-    transition:.25s;
+    box-shadow:0 5px 20px rgba(0,0,0,0.10);
+    transition:0.25s;
+    border:1px solid #edf0ed;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-6px);
+    box-shadow:0 10px 28px rgba(0,0,0,0.15);
 }
 
-.card-img{
-    height:170px;
-    overflow:hidden;
-}
-
-.card-img img{
+.card-image{
     width:100%;
-    height:100%;
+    height:220px;
     object-fit:cover;
 }
 
-.card-body{
-    padding:14px;
+.card-content{
+    padding:22px 18px 24px;
     text-align:center;
 }
 
-.card-body h3{
-    color:#075b43;
-    font-size:17px;
-    line-height:1.25;
-    margin-bottom:7px;
-}
-
-.card-body p{
-    color:#666;
-    font-size:13px;
-    min-height:54px;
-}
-
-.card-btn{
-    display:inline-block;
-    margin-top:8px;
-    padding:8px 16px;
-    border-radius:20px;
-    background:#075b43;
-    color:#fff;
-    font-size:12px;
-    font-weight:bold;
-}
-
-
-/* ================= WOMEN EMPOWERMENT ================= */
-
-.women-feature{
-    background:#fff5f8;
-    padding:55px 6%;
-}
-
-.women-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:42px;
-    align-items:center;
-}
-
-.women-image{
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 4px 18px rgba(0,0,0,.12);
-}
-
-.women-image img{
-    width:100%;
-    height:380px;
-    object-fit:cover;
-}
-
-.women-content h2{
-    font-family:Georgia,serif;
-    font-size:38px;
-    color:#075b43;
-    margin-bottom:15px;
-}
-
-.women-content p{
-    color:#555;
-    margin-bottom:14px;
-}
-
-.women-points{
-    margin:20px 0;
-}
-
-.women-points div{
-    margin:8px 0;
-    font-weight:bold;
-    color:#075b43;
-}
-
-
-/* ================= WOMEN PRODUCTS ================= */
-
-.products-feature{
-    padding:55px 6%;
-    background:#fff;
-}
-
-.products-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
-
-.products-image{
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 4px 18px rgba(0,0,0,.10);
-}
-
-.products-image img{
-    width:100%;
-    height:380px;
-    object-fit:cover;
-}
-
-.products-content h2{
-    font-family:Georgia,serif;
-    font-size:36px;
-    color:#075b43;
-    margin-bottom:15px;
-}
-
-.products-content p{
-    color:#555;
-    margin-bottom:14px;
-}
-
-.products-message{
-    border-left:5px solid #c96b18;
-    padding-left:15px;
-    font-weight:bold;
-    color:#075b43;
-    margin:20px 0;
-}
-
-
-/* ================= SUPPORT ================= */
-
-.support{
-    background:#edf8ea;
-    padding:52px 5%;
-    text-align:center;
-}
-
-.support-intro{
-    color:#555;
-    margin-bottom:30px;
-}
-
-.support-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-}
-
-.support-card{
-    background:#fff;
-    padding:25px 18px;
-    border-radius:15px;
-    box-shadow:0 2px 10px rgba(0,0,0,.06);
-}
-
-.support-icon{
-    font-size:34px;
-    margin-bottom:10px;
-}
-
-.support-card h3{
-    color:#075b43;
-    font-size:18px;
+.card h3{
+    color:#087451;
+    font-size:21px;
     margin-bottom:8px;
 }
 
-.support-card p{
-    color:#666;
+.card p{
+    color:#69736f;
     font-size:14px;
+    min-height:68px;
 }
 
+.card .btn{
+    margin-top:15px;
+    padding:10px 20px;
+    font-size:13px;
+}
 
-/* ================= WHO WE SUPPORT ================= */
+/* ================= PURPOSE ================= */
 
-.who{
-    padding:52px 5%;
+.purpose{
+    background:#f5faf7;
+}
+
+.purpose-box{
+    max-width:950px;
+    margin:auto;
     text-align:center;
 }
 
-.who-grid{
-    display:grid;
-    grid-template-columns:repeat(8,1fr);
-    gap:15px;
+.purpose-box h2{
+    font-family:Georgia,serif;
+    color:#056b50;
+    font-size:36px;
+    margin-bottom:20px;
 }
 
-.who-item{
-    font-size:13px;
+.purpose-box p{
+    font-size:19px;
+    color:#52605a;
+    margin-bottom:15px;
+}
+
+.highlight{
+    color:#087451;
     font-weight:bold;
 }
-
-.who-icon{
-    width:62px;
-    height:62px;
-    margin:0 auto 8px;
-    border-radius:50%;
-    background:#eef5f0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:27px;
-}
-
-
-/* ================= UPCOMING PROJECTS ================= */
-
-.projects{
-    padding:52px 5%;
-    background:#f1faf8;
-}
-
-.project-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
-    margin:25px 0;
-}
-
-.project{
-    background:#fff;
-    border-radius:14px;
-    padding:23px 18px;
-    border-left:5px solid #075b43;
-    box-shadow:0 2px 10px rgba(0,0,0,.06);
-}
-
-.project h3{
-    color:#075b43;
-    font-size:18px;
-    margin-bottom:7px;
-}
-
-.project p{
-    color:#666;
-    font-size:13px;
-}
-
 
 /* ================= ABOUT ================= */
 
 .about{
-    padding:60px 6%;
-    background:#fff8ed;
+    background:#fffaf0;
 }
 
 .about-grid{
+    max-width:1150px;
+    margin:auto;
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:45px;
+    gap:50px;
     align-items:center;
 }
 
 .about h2{
     font-family:Georgia,serif;
     font-size:38px;
-    color:#075b43;
-    margin-bottom:17px;
+    color:#056b50;
+    margin-bottom:18px;
 }
 
 .about p{
-    color:#555;
+    color:#59655f;
     margin-bottom:15px;
 }
 
-.about-highlight{
-    border-left:5px solid #c96b18;
-    padding-left:15px;
-    font-weight:bold;
-    color:#075b43 !important;
-}
-
-
-/* ================= GALLERY ================= */
-
-.gallery{
-    padding:55px 5%;
-    text-align:center;
-}
-
-.gallery-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:14px;
-    margin-top:25px;
-}
-
-.gallery-grid img{
+.about-image{
+    border-radius:20px;
     width:100%;
-    height:190px;
+    height:360px;
     object-fit:cover;
-    border-radius:13px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
 }
 
+/* ================= SUPPORT ================= */
 
-/* ================= CTA ================= */
-
-.cta{
-    background:#075b43;
-    color:#fff;
+.support{
+    background:#087451;
+    color:#ffffff;
     text-align:center;
-    padding:55px 6%;
 }
 
-.cta h2{
+.support h2{
     font-family:Georgia,serif;
     font-size:38px;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
-.cta p{
-    max-width:700px;
-    margin:0 auto 22px;
+.support p{
+    max-width:760px;
+    margin:0 auto 25px;
+    font-size:17px;
 }
 
-.cta .btn{
-    background:#fff;
-    color:#075b43;
-    border-color:#fff;
-    margin:5px;
+.support-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
+.support .btn{
+    background:#ffffff;
+    color:#087451;
+}
+
+/* ================= HOW SUPPORT ================= */
+
+.support-options{
+    background:#f7fbf8;
+}
+
+.option-grid{
+    max-width:1000px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.option{
+    background:#ffffff;
+    padding:30px 22px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 4px 18px rgba(0,0,0,0.08);
+}
+
+.option-icon{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.option h3{
+    color:#087451;
+    margin-bottom:8px;
+}
+
+.option p{
+    color:#68736e;
+    font-size:14px;
+}
 
 /* ================= CONTACT ================= */
 
 .contact{
-    padding:50px 6%;
     text-align:center;
+    background:#ffffff;
 }
 
 .contact-box{
-    max-width:720px;
-    margin:25px auto 0;
-    background:#f4faf7;
-    padding:28px;
-    border-radius:16px;
+    max-width:800px;
+    margin:auto;
+    background:#f1f8f5;
+    padding:35px 25px;
+    border-radius:20px;
 }
 
 .contact-box p{
-    margin:8px;
+    margin:8px 0;
+    color:#53615b;
 }
-
 
 /* ================= FOOTER ================= */
 
 footer{
-    background:#063c2e;
-    color:#fff;
-    padding:35px 6%;
+    background:#063f30;
+    color:#ffffff;
+    padding:45px 5% 20px;
 }
 
 .footer-grid{
+    max-width:1150px;
+    margin:auto;
     display:grid;
     grid-template-columns:2fr 1fr 1fr;
-    gap:35px;
+    gap:40px;
 }
 
 footer h3{
-    margin-bottom:12px;
+    margin-bottom:15px;
 }
 
 footer p,
 footer a{
-    display:block;
-    color:#d9e9e2;
+    color:#d9e6e1;
     font-size:14px;
-    margin:5px 0;
+}
+
+footer a{
+    display:block;
+    margin:7px 0;
 }
 
 .copyright{
-    border-top:1px solid rgba(255,255,255,.2);
-    margin-top:25px;
-    padding-top:15px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    margin-top:30px;
+    padding-top:18px;
     text-align:center;
-    color:#cbdcd5;
     font-size:12px;
+    color:#cbd8d3;
 }
 
+/* ================= MOBILE ================= */
 
-/* ================= TABLET ================= */
+@media(max-width:900px){
 
-@media(max-width:1000px){
+    .topbar{
+        justify-content:center;
+        text-align:center;
+        font-size:11px;
+    }
+
+    .topbar-right{
+        display:none;
+    }
+
+    header{
+        padding:12px 18px;
+    }
+
+    .brand{
+        gap:10px;
+    }
+
+    .brand img{
+        width:78px;
+        height:78px;
+    }
+
+    .brand-text h1{
+        font-size:17px;
+    }
+
+    .brand-text .tagline{
+        font-size:13px;
+    }
+
+    .brand-text .english-tagline{
+        font-size:10px;
+    }
 
     nav{
         display:none;
@@ -642,1242 +513,570 @@ footer a{
         display:block;
     }
 
-    .mobile-menu{
-        position:absolute;
-        top:100%;
-        left:0;
-        right:0;
-        background:#fff;
-        box-shadow:0 8px 15px rgba(0,0,0,.12);
-        padding:8px 5%;
-    }
-
-    .mobile-menu.open{
-        display:block;
-    }
-
-    .mobile-menu a{
-        display:block;
-        padding:13px 5px;
-        border-bottom:1px solid #eee;
-        color:#075b43;
-        font-weight:bold;
-    }
-
-    .cards{
-        grid-template-columns:repeat(3,1fr);
-    }
-
-    .support-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .who-grid{
-        grid-template-columns:repeat(4,1fr);
-    }
-
-    .project-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .gallery-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-}
-
-
-/* ================= MOBILE ================= */
-
-@media(max-width:650px){
-
-    .topbar{
-        justify-content:center;
-        text-align:center;
-        font-size:9px;
-    }
-
-    header{
-        padding:7px 4%;
-    }
-
-    .brand{
-        gap:8px;
-    }
-
-    .brand img{
-        width:72px;
-        height:72px;
-    }
-
-    .brand-text h1{
-        font-size:13px;
-    }
-
-    .marathi{
-        font-size:11px;
-    }
-
-    .tagline{
-        font-size:8px;
-    }
-
     .hero{
-        min-height:470px;
-        padding:45px 7%;
-
+        min-height:570px;
         background:
-        linear-gradient(
-            rgba(248,250,240,.91),
-            rgba(248,250,240,.78)
-        ),
-        url("program-02.jpg") center/cover no-repeat;
+            linear-gradient(90deg,
+            rgba(255,255,255,0.88),
+            rgba(255,255,255,0.48)),
+            url("women-entrepreneurs.jpg") center/cover no-repeat;
+    }
+
+    .hero-content{
+        width:100%;
+        padding:55px 28px;
     }
 
     .hero h2{
         font-size:43px;
     }
 
+    .hero .lead{
+        font-size:18px;
+    }
+
     .hero p{
-        font-size:16px;
+        font-size:15px;
+    }
+
+    section{
+        padding:55px 20px;
     }
 
     .section-title{
-        font-size:29px;
+        font-size:31px;
     }
 
     .cards{
         grid-template-columns:1fr;
+        max-width:420px;
     }
 
-    .card-img{
-        height:200px;
+    .card-image{
+        height:230px;
     }
 
-    .women-grid,
-    .products-grid,
     .about-grid{
         grid-template-columns:1fr;
+        gap:28px;
     }
 
-    .women-image img,
-    .products-image img{
-        height:280px;
-    }
-
-    .support-grid{
-        grid-template-columns:1fr;
-    }
-
-    .who-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .project-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gallery-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .gallery-grid img{
-        height:145px;
-    }
-
-    .women-content h2,
-    .products-content h2,
     .about h2{
-        font-size:30px;
+        font-size:31px;
     }
 
-    .cta h2{
-        font-size:30px;
+    .about-image{
+        height:300px;
+    }
+
+    .option-grid{
+        grid-template-columns:1fr;
     }
 
     .footer-grid{
         grid-template-columns:1fr;
+        gap:25px;
     }
-
 }
 
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- ================= TOP BAR ================= -->
-
+<!-- TOP BAR -->
 <div class="topbar">
+    <div>✉ support@cgbs-org.in &nbsp; | &nbsp; 📍 Pune, Maharashtra, India</div>
 
-<div>
-✉ support@cgbs-org.in
-&nbsp; | &nbsp;
-📍 Pune, Maharashtra, India
-</div>
-
-<div>
-Facebook &nbsp; Instagram &nbsp; YouTube &nbsp; LinkedIn
-</div>
-
+    <div class="topbar-right">
+        <span>Facebook</span>
+        <span>YouTube</span>
+        <span>LinkedIn</span>
+    </div>
 </div>
 
 
-<!-- ================= HEADER ================= -->
-
+<!-- HEADER -->
 <header>
 
-<a href="#home" class="brand">
+    <a href="CGBS_Homepage_v2.html" class="brand">
 
-<img
-src="CGBS-logo.png"
-alt="Official CGBS Logo">
+        <img src="CGBS-logo.png" alt="CGBS Official Logo">
 
-<div class="brand-text">
+        <div class="brand-text">
 
-<h1>
-CHATRAPATI GRAMVIKAS<br>
-BHAUUDDHASHIYA SANSTHA (CGBS)
-</h1>
+            <h1>
+                CHATRAPATI GRAMVIKAS<br>
+                BHAUUDDHASHIYA SANSTHA (CGBS)
+            </h1>
 
-<div class="marathi">
-सेवा • सामर्थ्य • संस्कार
-</div>
+            <div class="tagline">
+                सेवा • सामर्थ्य • संस्कार
+            </div>
 
-<div class="tagline">
-Promoting Social Progress and Better Life.
-</div>
+            <div class="english-tagline">
+                Promoting Social Progress and Better Life.
+            </div>
 
-</div>
+        </div>
 
-</a>
+    </a>
 
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#initiatives">Our Work</a>
+        <a href="#about">About CGBS</a>
+        <a href="#support">Get Involved</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-<nav>
-
-<a href="#home">Home</a>
-
-<a href="#about">About Us</a>
-
-<a href="focus-areas.html">Our Work</a>
-
-<a href="#support">Get Involved</a>
-
-<a href="#gallery">Gallery</a>
-
-<a href="#contact">Contact Us</a>
-
-</nav>
-
-
-<button
-class="menu-btn"
-onclick="toggleMenu()"
-aria-label="Open Menu">
-
-☰
-
-</button>
-
-
-<div
-class="mobile-menu"
-id="mobileMenu">
-
-<a href="#home" onclick="toggleMenu()">
-Home
-</a>
-
-<a href="#about" onclick="toggleMenu()">
-About Us
-</a>
-
-<a href="focus-areas.html">
-Our Work
-</a>
-
-<a href="#support" onclick="toggleMenu()">
-Get Involved
-</a>
-
-<a href="#gallery" onclick="toggleMenu()">
-Gallery
-</a>
-
-<a href="#contact" onclick="toggleMenu()">
-Contact Us
-</a>
-
-</div>
+    <div class="menu-btn">☰</div>
 
 </header>
 
 
+<!-- HERO -->
+<section class="hero" id="home">
 
-<!-- ================= HERO ================= -->
+    <div class="hero-content">
 
-<section
-class="hero"
-id="home">
+        <h2>
+            People.<br>
+            Progress.<br>
+            Possibilities.
+        </h2>
 
-<div class="hero-content">
+        <div class="lead">
+            Educate • Empower • Support
+        </div>
 
-<h2>
-People.<br>
-Progress.<br>
-Possibilities.
-</h2>
+        <p>
+            We create opportunities that help people develop
+            skills, confidence, livelihoods and leadership for
+            a better future.
+        </p>
 
-<p>
+        <div class="buttons">
 
-<strong>
-Educate • Empower • Support
-</strong>
+            <a href="#initiatives" class="btn">
+                Explore Our Work →
+            </a>
 
-<br>
+            <a href="#about" class="btn btn-outline">
+                About CGBS
+            </a>
 
-Creating opportunities for a brighter tomorrow.
+        </div>
 
-</p>
-
-
-<div class="hero-buttons">
-
-<a
-href="focus-areas.html"
-class="btn btn-primary">
-
-Explore Our Work →
-
-</a>
-
-
-<a
-href="#about"
-class="btn btn-outline">
-
-About CGBS
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- PURPOSE -->
+<section class="purpose">
 
-<!-- ================= KEY INITIATIVES ================= -->
+    <div class="purpose-box">
 
-<section class="initiatives">
+        <h2>Our Purpose</h2>
 
-<div class="section-heading">
+        <p>
+            Our purpose is not simply to provide support.
+        </p>
 
-<h2 class="section-title">
-Our Key Initiatives
-</h2>
+        <p class="highlight">
+            We create opportunities for people to become
+            capable, confident, independent and self-reliant.
+        </p>
 
-<p>
-Building stronger individuals, families and communities.
-</p>
+        <p>
+            Through education, skills, livelihood opportunities,
+            family wellbeing, youth development and leadership,
+            CGBS works towards meaningful social progress.
+        </p>
 
-</div>
-
-
-<div class="cards">
-
-
-<!-- WOMEN -->
-
-<a
-href="women-tribal-products.html"
-class="card">
-
-<div class="card-img">
-
-<img
-src="women-entrepreneurs.jpg"
-alt="CGBS Women Entrepreneurs">
-
-</div>
-
-<div class="card-body">
-
-<h3>
-Support Women Entrepreneurs
-</h3>
-
-<p>
-Skills • Livelihood • Products • Market Opportunities
-</p>
-
-<span class="card-btn">
-Explore →
-</span>
-
-</div>
-
-</a>
-
-
-
-<!-- AIM -->
-
-<a
-href="aim.html"
-class="card">
-
-<div class="card-img">
-
-<img
-src="aim-hero-poster.png"
-alt="AIM Youth De-Addiction Workshop">
-
-</div>
-
-<div class="card-body">
-
-<h3>
-AIM
-</h3>
-
-<p>
-Youth De-Addiction<br>
-Awareness • Guidance • Family Support
-</p>
-
-<span class="card-btn">
-Explore →
-</span>
-
-</div>
-
-</a>
-
-
-
-<!-- MOM -->
-
-<a
-href="mom.html"
-class="card">
-
-<div class="card-img">
-
-<img
-src="mom-hero.jpg"
-alt="MOM Family Programme">
-
-</div>
-
-<div class="card-body">
-
-<h3>
-MOM
-</h3>
-
-<p>
-Family Communication<br>
-& Positive Engagement
-</p>
-
-<span class="card-btn">
-Explore →
-</span>
-
-</div>
-
-</a>
-
-
-
-<!-- YOUTH -->
-
-<a
-href="youth-support.html"
-class="card">
-
-<div class="card-img">
-
-<img
-src="youth-athlete.jpg"
-alt="Youth and Athlete Support">
-
-</div>
-
-<div class="card-body">
-
-<h3>
-Support Growing Youth & Talent
-</h3>
-
-<p>
-Youth • Athletes • Artists<br>
-Researchers • Innovators
-</p>
-
-<span class="card-btn">
-Explore →
-</span>
-
-</div>
-
-</a>
-
-
-
-<!-- GOLDEN EVE -->
-
-<a
-href="golden-eve.html"
-class="card">
-
-<div class="card-img">
-
-<img
-src="golden-eve-admission-hero.png"
-alt="Golden Eve Care Centres">
-
-</div>
-
-<div class="card-body">
-
-<h3>
-Golden Eve Care Centres
-</h3>
-
-<p>
-Care • Dignity • Support<br>
-Pune • Satara
-</p>
-
-<span class="card-btn">
-View Care Centres →
-</span>
-
-</div>
-
-</a>
-
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- KEY INITIATIVES -->
+<section class="initiatives" id="initiatives">
 
-<!-- ================= WOMEN EMPOWERMENT ================= -->
+    <h2 class="section-title">
+        Our Key Initiatives
+    </h2>
 
-<section class="women-feature">
-
-<div class="women-grid">
-
-
-<div class="women-image">
-
-<img
-src="women-community-impact.jpg"
-alt="Women community empowerment and livelihood">
-
-</div>
+    <p class="section-subtitle">
+        Four focused initiatives creating opportunities
+        for individuals, families and communities.
+    </p>
 
 
-<div class="women-content">
-
-<h2>
-Women Empowerment Through Skills & Livelihood
-</h2>
-
-<p>
-CGBS believes that empowerment becomes meaningful
-when people have the skills, confidence and opportunities
-to build a better future.
-</p>
-
-<p>
-Our women-focused work supports skill development,
-livelihood creation, entrepreneurship and access to markets.
-</p>
+    <div class="cards">
 
 
-<div class="women-points">
+        <!-- 1 WOMEN -->
+        <a href="women-tribal-products.html" class="card">
 
-<div>
-✓ Build skills and confidence
-</div>
+            <img
+                src="women-entrepreneurs.jpg"
+                alt="Women Entrepreneurs"
+                class="card-image"
+            >
 
-<div>
-✓ Create livelihood opportunities
-</div>
+            <div class="card-content">
 
-<div>
-✓ Promote women's products
-</div>
+                <h3>
+                    Support Women Entrepreneurs
+                </h3>
 
-<div>
-✓ Connect women with markets
-</div>
+                <p>
+                    Skills • Livelihood • Products •
+                    Market Opportunities
+                </p>
 
-<div>
-✓ Encourage independence and dignity
-</div>
+                <span class="btn">
+                    Explore →
+                </span>
 
-</div>
+            </div>
+
+        </a>
 
 
-<a
-href="women-tribal-products.html"
-class="btn btn-primary">
+        <!-- 2 AIM -->
+        <a href="aim.html" class="card">
 
-Explore Women Entrepreneurs →
+            <img
+                src="aim-hero-poster.png"
+                alt="AIM Youth De-Addiction Workshop"
+                class="card-image"
+            >
 
-</a>
+            <div class="card-content">
 
-</div>
+                <h3>
+                    AIM
+                </h3>
 
-</div>
+                <p>
+                    Youth De-Addiction • Awareness •
+                    Guidance • Family Support
+                </p>
+
+                <span class="btn">
+                    Explore →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- 3 MOM -->
+        <a href="mom.html" class="card">
+
+            <img
+                src="mom-workshop.jpg"
+                alt="MOM Family Communication Programme"
+                class="card-image"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    MOM
+                </h3>
+
+                <p>
+                    Family Communication • Life Skills •
+                    Positive Engagement
+                </p>
+
+                <span class="btn">
+                    Explore →
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <!-- 4 IGNITE -->
+        <a href="ignite.html" class="card">
+
+            <img
+                src="ignite-skills-leadership.jpg"
+                alt="CGBS Ignite Modern Skills Leadership"
+                class="card-image"
+            >
+
+            <div class="card-content">
+
+                <h3>
+                    CGBS Ignite
+                </h3>
+
+                <p>
+                    Modern Skills • Leadership •
+                    Entrepreneurship • Opportunities
+                </p>
+
+                <span class="btn">
+                    Explore →
+                </span>
+
+            </div>
+
+        </a>
+
+    </div>
 
 </section>
 
 
+<!-- ABOUT -->
+<section class="about" id="about">
 
-<!-- ================= WOMEN PRODUCTS ================= -->
+    <div class="about-grid">
 
-<section class="products-feature">
+        <div>
 
-<div class="products-grid">
+            <h2>
+                About CGBS
+            </h2>
 
+            <p>
+                Chhatrapati Gramvikas Bhauuddhashiya Sanstha
+                (CGBS) works towards social progress and
+                better life by supporting education, empowerment,
+                health, skills, livelihood and community development.
+            </p>
 
-<div class="products-content">
+            <p>
+                We believe meaningful social development happens
+                when people receive the right opportunities,
+                knowledge, skills, resources and encouragement.
+            </p>
 
-<h2>
-Support Women Through Their Products
-</h2>
+            <p class="highlight">
+                Our approach is to empower people — not create
+                dependency.
+            </p>
 
-<p>
-Behind every product is a story of skill, effort,
-creativity and determination.
-</p>
+        </div>
 
-<p>
-When you buy a product made by a community woman,
-you are not simply purchasing an item — you are helping
-create a pathway towards livelihood and independence.
-</p>
+        <div>
 
-<div class="products-message">
+            <img
+                src="women-community-impact.jpg"
+                alt="CGBS Community Work"
+                class="about-image"
+            >
 
-Buy • Promote • Connect • Empower
+        </div>
 
-</div>
-
-<a
-href="women-tribal-products.html"
-class="btn btn-primary">
-
-Explore Women's Products →
-
-</a>
-
-</div>
-
-
-<div class="products-image">
-
-<img
-src="women-products.jpg"
-alt="Women products and skill development">
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- HOW PEOPLE CAN SUPPORT -->
+<section class="support-options" id="support">
 
-<!-- ================= SUPPORT ================= -->
+    <h2 class="section-title">
+        How You Can Support & Empower
+    </h2>
 
-<section
-class="support"
-id="support">
-
-<h2 class="section-title">
-Support Through Empowerment
-</h2>
-
-<p class="support-intro">
-There are many meaningful ways to become part of someone's journey.
-</p>
+    <p class="section-subtitle">
+        Your support can become someone's opportunity.
+    </p>
 
 
-<div class="support-grid">
+    <div class="option-grid">
 
 
-<div class="support-card">
+        <div class="option">
 
-<div class="support-icon">
-₹
-</div>
+            <div class="option-icon">
+                💚
+            </div>
 
-<h3>
-Financial Support
-</h3>
+            <h3>
+                Financial Support
+            </h3>
 
-<p>
-Help create opportunities where financial support
-is needed.
-</p>
+            <p>
+                Support meaningful programmes and help
+                create opportunities for people and communities.
+            </p>
 
-</div>
-
-
-
-<div class="support-card">
-
-<div class="support-icon">
-🛒
-</div>
-
-<h3>
-Buy • Provide • Equip
-</h3>
-
-<p>
-Buy products or provide useful resources,
-equipment and aids.
-</p>
-
-</div>
+        </div>
 
 
+        <div class="option">
 
-<div class="support-card">
+            <div class="option-icon">
+                🛍️
+            </div>
 
-<div class="support-icon">
-👥
-</div>
+            <h3>
+                Buy • Provide • Equip
+            </h3>
 
-<h3>
-Give Your Time & Skills
-</h3>
+            <p>
+                Purchase products made by women entrepreneurs
+                or provide useful resources, equipment and materials.
+            </p>
 
-<p>
-Teach • Mentor • Guide • Train • Upskill.
-</p>
-
-</div>
-
-
-
-<div class="support-card">
-
-<div class="support-icon">
-🤝
-</div>
-
-<h3>
-Partner With CGBS
-</h3>
-
-<p>
-CSR • Institutions • Professionals • Organisations.
-</p>
-
-</div>
+        </div>
 
 
-</div>
+        <div class="option">
+
+            <div class="option-icon">
+                🤝
+            </div>
+
+            <h3>
+                Give Your Time & Skills
+            </h3>
+
+            <p>
+                Volunteer your knowledge, professional skills,
+                mentoring, teaching or guidance.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
 
+<!-- GREEN CTA -->
+<section class="support">
 
-<!-- ================= WHO WE SUPPORT ================= -->
+    <h2>
+        Together, We Can Create Opportunities.
+    </h2>
 
-<section class="who">
+    <p>
+        Be part of someone's growth through your support,
+        skills, time, resources or partnership.
+    </p>
 
-<h2 class="section-title">
-Who We Support
-</h2>
+    <div class="support-buttons">
 
+        <a href="request-support.html" class="btn">
+            Support & Participate
+        </a>
 
-<div class="who-grid">
+        <a href="mailto:support@cgbs-org.in" class="btn">
+            Partner With CGBS
+        </a>
 
-
-<div class="who-item">
-
-<div class="who-icon">
-👩
-</div>
-
-Women<br>
-Entrepreneurs
-
-</div>
-
-
-
-<div class="who-item">
-
-<div class="who-icon">
-👧
-</div>
-
-Children<br>
-& Students
-
-</div>
-
-
-
-<div class="who-item">
-
-<div class="who-icon">
-🧑
-</div>
-
-Youth
-
-</div>
-
-
-
-<div class="who-item">
-
-<div class="who-icon">
-🏃
-</div>
-
-Athletes
-
-</div>
-
-
-
-<div class="who-item">
-
-<div class="who-icon">
-🎨
-</div>
-
-Artists
-
-</div>
-
-
-
-<div class="who-item">
-
-<div class="who-icon">
-🔬
-</div>
-
-Researchers<br>
-& Innovators
-
-</div>
-
-
-
-<div class="who-item">
-
-<div class="who-icon">
-👵
-</div>
-
-Senior<br>
-Citizens
-
-</div>
-
-
-
-<div class="who-item">
-
-<div class="who-icon">
-🌍
-</div>
-
-Vulnerable<br>
-Communities
-
-</div>
-
-
-</div>
+    </div>
 
 </section>
 
 
+<!-- CONTACT -->
+<section class="contact" id="contact">
 
-<!-- ================= UPCOMING PROJECTS ================= -->
+    <h2 class="section-title">
+        Connect With CGBS
+    </h2>
 
-<section class="projects">
+    <div class="contact-box">
 
-<h2 class="section-title">
-Upcoming Projects
-</h2>
+        <p>
+            📍 <strong>Pune, Maharashtra, India</strong>
+        </p>
 
-<p>
-Creating new opportunities for education, skills,
-innovation and livelihoods.
-</p>
+        <p>
+            ✉ <strong>support@cgbs-org.in</strong>
+        </p>
 
+        <p>
+            We welcome individuals, professionals,
+            institutions and organisations who want to
+            contribute to meaningful social progress.
+        </p>
 
-<div class="project-grid">
-
-
-<div class="project">
-
-<h3>
-Rural STEM & Robotics
-</h3>
-
-<p>
-Creating opportunities for practical,
-technology-based learning.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>
-Tribal Skill Development
-</h3>
-
-<p>
-Supporting skills, livelihoods and
-employment-oriented opportunities.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>
-Digital & AI Learning
-</h3>
-
-<p>
-Preparing learners for a changing
-digital world.
-</p>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>
-Women Livelihood Development
-</h3>
-
-<p>
-Strengthening skills, products,
-markets and economic independence.
-</p>
-
-</div>
-
-
-</div>
-
-
-<a
-href="#contact"
-class="btn btn-primary">
-
-Discuss a Project →
-
-</a>
+    </div>
 
 </section>
 
 
-
-<!-- ================= ABOUT ================= -->
-
-<section
-class="about"
-id="about">
-
-<div class="about-grid">
-
-
-<div>
-
-<h2>
-About CGBS
-</h2>
-
-<p>
-Chhatrapati Gramvikas Bahuuddeshiya Sanstha (CGBS)
-works towards social progress and a better life by
-supporting education, empowerment, health, skills,
-livelihood and community development.
-</p>
-
-<p class="about-highlight">
-
-Our purpose is not simply to give support,
-but to create opportunities that help people become
-capable, confident, independent and self-reliant.
-
-</p>
-
-<p>
-We believe meaningful social development happens
-when people are given the right opportunities,
-knowledge, resources, skills and encouragement.
-</p>
-
-</div>
-
-
-<div class="women-image">
-
-<img
-src="program-02.jpg"
-alt="CGBS community health and social development activity">
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-<!-- ================= CGBS IN ACTION ================= -->
-
-<section
-class="gallery"
-id="gallery">
-
-<h2 class="section-title">
-CGBS in Action
-</h2>
-
-<p>
-A glimpse of community-oriented work and initiatives.
-</p>
-
-
-<div class="gallery-grid">
-
-
-<img
-src="program-02.jpg"
-alt="CGBS health camp">
-
-
-<img
-src="women-entrepreneurs.jpg"
-alt="CGBS women entrepreneurs">
-
-
-<img
-src="youth-athlete.jpg"
-alt="Youth and athlete support">
-
-
-<img
-src="women-products.jpg"
-alt="Women products and livelihood">
-
-
-</div>
-
-</section>
-
-
-
-<!-- ================= CTA ================= -->
-
-<section class="cta">
-
-<h2>
-Together, We Can Create Opportunities.
-</h2>
-
-<p>
-Be part of someone's growth through your support,
-skills, time, resources or partnership.
-</p>
-
-
-<a
-href="#support"
-class="btn">
-
-How You Can Support
-
-</a>
-
-
-<a
-href="#contact"
-class="btn">
-
-Partner With CGBS
-
-</a>
-
-</section>
-
-
-
-<!-- ================= CONTACT ================= -->
-
-<section
-class="contact"
-id="contact">
-
-<h2 class="section-title">
-Connect With CGBS
-</h2>
-
-
-<div class="contact-box">
-
-<p>
-📍 <strong>Pune, Maharashtra, India</strong>
-</p>
-
-<p>
-✉ <strong>support@cgbs-org.in</strong>
-</p>
-
-<p>
-We welcome individuals, professionals, institutions
-and organisations who want to contribute to meaningful
-social progress.
-</p>
-
-</div>
-
-</section>
-
-
-
-<!-- ================= FOOTER ================= -->
-
+<!-- FOOTER -->
 <footer>
 
-<div class="footer-grid">
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>
+                CHATRAPATI GRAMVIKAS
+                BHAUUDDHASHIYA SANSTHA
+            </h3>
+
+            <p>
+                सेवा • सामर्थ्य • संस्कार
+            </p>
+
+            <p>
+                Promoting Social Progress and Better Life.
+            </p>
+
+        </div>
 
 
-<div>
+        <div>
 
-<h3>
-CHATRAPATI GRAMVIKAS
-BHAUUDDHASHIYA SANSTHA
-</h3>
+            <h3>
+                Quick Links
+            </h3>
 
-<p>
-सेवा • सामर्थ्य • संस्कार
-</p>
+            <a href="#home">Home</a>
+            <a href="#initiatives">Our Work</a>
+            <a href="#about">About CGBS</a>
+            <a href="#support">Get Involved</a>
+            <a href="#contact">Contact</a>
 
-<p>
-Promoting Social Progress and Better Life.
-</p>
-
-</div>
+        </div>
 
 
+        <div>
 
-<div>
+            <h3>
+                Contact
+            </h3>
 
-<h3>
-Quick Links
-</h3>
+            <p>
+                📍 Pune, Maharashtra, India
+            </p>
 
-<a href="#home">
-Home
-</a>
+            <p>
+                ✉ support@cgbs-org.in
+            </p>
 
-<a href="#about">
-About Us
-</a>
+        </div>
 
-<a href="focus-areas.html">
-Our Work
-</a>
-
-<a href="#support">
-Get Involved
-</a>
-
-<a href="#gallery">
-Gallery
-</a>
-
-</div>
+    </div>
 
 
-
-<div>
-
-<h3>
-Contact
-</h3>
-
-<p>
-📍 Pune, Maharashtra, India
-</p>
-
-<p>
-✉ support@cgbs-org.in
-</p>
-
-</div>
-
-
-</div>
-
-
-<div class="copyright">
-
-© 2026 Chhatrapati Gramvikas Bahuuddeshiya Sanstha (CGBS).
-All Rights Reserved.
-
-</div>
+    <div class="copyright">
+        © 2026 Chhatrapati Gramvikas Bhauuddhashiya Sanstha (CGBS).
+        All Rights Reserved.
+    </div>
 
 </footer>
 
 
-
-<!-- ================= SUPPORT WIDGET ================= -->
-
-<script src="./support-widget.js?v=2"></script>
-
-
-<script>
-
-function toggleMenu(){
-
-    const menu =
-    document.getElementById("mobileMenu");
-
-    menu.classList.toggle("open");
-
-}
-
-</script>
-
+<!-- SUPPORT WIDGET -->
+<script src="support-widget.js?v=2"></script>
 
 </body>
-
-</html>
+    </html>
