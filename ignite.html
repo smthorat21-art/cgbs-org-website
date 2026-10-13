@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CGBS Ignite | AI Skills, Future-Ready Technology & Entrepreneurship</title>
+
+<meta name="description" content="Explore CGBS Ignite, a proposed youth development initiative focused on future-ready skills, Artificial Intelligence, robotics, coding, innovation, leadership, critical thinking and entrepreneurship.">
+
+<meta name="keywords" content="CGBS Ignite, Future Ready Skills, AI Skills, Artificial Intelligence, Robotics, Coding, Youth Skill Development, Entrepreneurship, Leadership, Innovation, Pune NGO">
+
+<meta name="theme-color" content="#087443">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #20302b;
+  background: #f5faf7;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+.topbar {
+  background: #075337;
+  color: white;
+  padding: 9px 16px;
+  text-align: center;
+  font-size: 13px;
+}
+
+header {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 5%;
+  border-bottom: 1px solid #e2ece6;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+}
+
+.brand h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.3;
+  color: #174b39;
+}
+
+.brand p {
+  margin: 3px 0 0;
+  color: #68776f;
+  font-size: 12px;
+}
+
+.home-btn {
+  background: #087443;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.hero {
+  background: linear-gradient(135deg, #e5f6ec, #edf6ff);
+  padding: 45px 18px;
+  text-align: center;
+}
+
+.hero-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.label {
+  display: inline-block;
+  background: #d4efdf;
+  color: #075b38;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.hero h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.15;
+  color: #174b39;
+  margin: 18px 0;
+}
+
+.hero h2 span {
+  color: #087443;
+}
+
+.hero p {
+  max-width: 760px;
+  margin: 0 auto 20px;
+  font-size: 17px;
+  color: #50645a;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  max-height: 440px;
+  object-fit: contain;
+  margin: 28px auto 0;
+  border-radius: 16px;
+}
+
+.button {
+  display: inline-block;
+  background: #087443;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 28px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 6px;
+}
+
+.button.secondary {
+  background: white;
+  color: #087443;
+  border: 1px solid #c8e0d1;
+}
+
+.section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 18px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.section-heading h2 {
+  font-family: Georgia, serif;
+  color: #174b39;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.section-heading p {
+  max-width: 760px;
+  margin: auto;
+  color: #64756c;
+}
+
+.intro {
+  background: white;
+  border: 1px solid #e1ebe4;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 28px;
+}
+
+.intro h3 {
+  margin-top: 0;
+  color: #087443;
+  font-size: 22px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.skill-card {
+  background: white;
+  padding: 23px;
+  border: 1px solid #e1ebe4;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+.skill-icon {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.skill-card h3 {
+  color: #087443;
+  margin: 0 0 9px;
+  font-size: 19px;
+}
+
+.skill-card p {
+  color: #5c6c63;
+  font-size: 14px;
+  margin: 0;
+}
+
+.pathway {
+  background: #073f2d;
+  color: white;
+  padding: 40px 18px;
+  text-align: center;
+}
+
+.pathway h2 {
+  font-family: Georgia, serif;
+  font-size: 29px;
+  margin: 0 0 12px;
+}
+
+.pathway p {
+  max-width: 760px;
+  margin: auto;
+  color: #e0f1e7;
+}
+
+.pathway-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 1050px;
+  margin: 28px auto 0;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 12px;
+  padding: 18px 12px;
+  font-weight: bold;
+}
+
+.step span {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 6px;
+}
+
+.note {
+  background: #fff9e9;
+  border-left: 4px solid #e0ad39;
+  border-radius: 10px;
+  padding: 18px;
+  color: #5c4b24;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+.cta {
+  text-align: center;
+  background: white;
+  padding: 40px 18px;
+}
+
+.cta h2 {
+  color: #174b39;
+  font-family: Georgia, serif;
+  font-size: 28px;
+}
+
+.cta p {
+  max-width: 700px;
+  margin: auto;
+  color: #627168;
+}
+
+footer {
+  background: #073f2d;
+  color: white;
+  text-align: center;
+  padding: 24px 16px;
+  font-size: 13px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pathway-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    padding: 12px;
+    align-items: center;
+  }
+
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .brand {
+    gap: 8px;
+  }
+
+  .brand h1 {
+    font-size: 14px;
+  }
+
+  .brand p {
+    font-size: 10px;
+  }
+
+  .home-btn {
+    padding: 9px 11px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 35px 15px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 32px 14px;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .pathway-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  CGBS IGNITE | Future-Ready Skills • Innovation • Leadership
+</div>
+
+<header>
+  <div class="brand">
+    <img
+      class="logo"
+      src="CGBS-logo.png"
+      alt="CGBS Official Logo">
+
+    <div>
+      <h1>CHATRAPATI GRAMVIKAS BHAUUDHASHIYA SANSTHA</h1>
+      <p>Promoting Social Progress and Better Life</p>
+    </div>
+  </div>
+
+  <a class="home-btn" href="index.html">Home</a>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+
+    <span class="label">YOUTH SKILLS & INNOVATION</span>
+
+    <h2>
+      CGBS Ignite<br>
+      <span>Learn Today, Lead Tomorrow</span>
+    </h2>
+
+    <p>
+      Exploring future-ready skills, Artificial Intelligence,
+      next-generation technology, creative thinking, leadership
+      and entrepreneurship to help young people prepare for
+      emerging opportunities.
+    </p>
+
+    <a class="button" href="#skills">Explore Skill Areas</a>
+
+    <a class="button secondary" href="#contact">Contact CGBS</a>
+
+    <img
+      class="hero-image"
+      src="ignite-skills-leadership.jpg"
+      alt="CGBS Ignite Modern Skills, Leadership and Entrepreneurship">
+  </div>
+</section>
+
+<section class="section">
+
+  <div class="intro">
+    <h3>About CGBS Ignite</h3>
+
+    <p>
+      CGBS Ignite is a proposed youth development initiative
+      designed to introduce young people to modern skills,
+      emerging technologies, innovation and entrepreneurship.
+      Its vision is to encourage learning, confidence,
+      responsible technology use, problem-solving and
+      leadership.
+    </p>
+
+    <p>
+      The initiative aims to connect learning with practical
+      ideas and help young people explore educational,
+      professional and entrepreneurial opportunities.
+    </p>
+  </div>
+
+  <div class="section-heading" id="skills">
+    <h2>Future-Ready Skills for the Next Generation</h2>
+
+    <p>
+      Proposed learning areas to help youth understand
+      emerging technologies, develop practical abilities
+      and prepare for a changing world.
+    </p>
+  </div>
+
+  <div class="skills-grid">
+
+    <article class="skill-card">
+      <div class="skill-icon">🤖</div>
+      <h3>1. Artificial Intelligence (AI)</h3>
+      <p>
+        Introduction to AI concepts, useful AI tools,
+        responsible AI use, AI-assisted learning and
+        understanding the opportunities and limitations
+        of artificial intelligence.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">🚀</div>
+      <h3>2. Future-Ready Skills</h3>
+      <p>
+        Adaptability, collaboration, digital confidence,
+        creative thinking and skills that help young people
+        prepare for changing careers and opportunities.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">💻</div>
+      <h3>3. Coding & Robotics</h3>
+      <p>
+        Explore programming fundamentals, logical thinking,
+        block-based coding, robotics concepts and
+        technology-based problem-solving.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">📱</div>
+      <h3>4. Digital Skills & Safety</h3>
+      <p>
+        Digital literacy, online safety, cyber awareness,
+        digital productivity and responsible use of
+        online resources.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">💡</div>
+      <h3>5. Innovation & Design Thinking</h3>
+      <p>
+        Identify everyday problems, develop new ideas,
+        explore creative solutions and learn how ideas
+        can be tested and improved.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">🏢</div>
+      <h3>6. Entrepreneurship & Startups</h3>
+      <p>
+        Business idea development, understanding customer
+        needs, basic business planning, innovation and
+        exploring the startup journey.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">🧠</div>
+      <h3>7. Critical Thinking & Problem-Solving</h3>
+      <p>
+        Ask meaningful questions, evaluate information,
+        understand different perspectives, make informed
+        decisions and solve problems systematically.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">🎯</div>
+      <h3>8. Leadership & Communication</h3>
+      <p>
+        Teamwork, public speaking, listening, decision-making,
+        collaboration and the confidence to take
+        responsibility and lead initiatives.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">💰</div>
+      <h3>9. Financial & Business Literacy</h3>
+      <p>
+        Understand budgeting, saving, financial decisions,
+        basic business costs, pricing and responsible
+        money management.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">🎨</div>
+      <h3>10. Creative Skills & Content Creation</h3>
+      <p>
+        Explore visual design, storytelling, creative
+        communication, digital content and ways to
+        communicate ideas effectively.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">🔬</div>
+      <h3>11. Research & Scientific Thinking</h3>
+      <p>
+        Observation, asking research questions, gathering
+        information, examining evidence and developing
+        curiosity through structured learning.
+      </p>
+    </article>
+
+    <article class="skill-card">
+      <div class="skill-icon">💼</div>
+      <h3>12. Career Readiness</h3>
+      <p>
+        Career exploration, resume preparation,
+        interview practice, workplace communication
+        and planning future learning pathways.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+<section class="pathway">
+
+  <h2>From Learning to Leadership</h2>
+
+  <p>
+    Encourage young people to discover their interests,
+    develop their abilities, explore ideas and work
+    towards meaningful opportunities.
+  </p>
+
+  <div class="pathway-steps">
+
+    <div class="step">
+      <span>📘</span>
+      Explore
+    </div>
+
+    <div class="step">
+      <span>🛠️</span>
+      Learn & Practise
+    </div>
+
+    <div class="step">
+      <span>💡</span>
+      Create & Innovate
+    </div>
+
+    <div class="step">
+      <span>🌱</span>
+      Lead & Grow
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <div class="section-heading">
+    <h2>Our Vision</h2>
+    <p>
+      Building confidence, encouraging curiosity and
+      helping youth explore the skills and ideas that
+      may shape their future.
+    </p>
+  </div>
+
+  <div class="intro">
+    <h3>Learning with Purpose</h3>
+
+    <p>
+      CGBS Ignite aims to promote accessible learning,
+      responsible technology use, creativity, leadership
+      and entrepreneurship. The proposed activities and
+      training opportunities will depend on programme
+      planning, resources and partnerships.
+    </p>
+
+    <div class="note">
+      <strong>Programme Note:</strong>
+      The skill areas listed on this page describe the
+      proposed scope of CGBS Ignite. Specific courses,
+      workshops, schedules and training availability
+      will be announced when confirmed by CGBS.
+    </div>
+  </div>
+
+</section>
+
+<section class="cta" id="contact">
+
+  <h2>Explore Opportunities with CGBS Ignite</h2>
+
+  <p>
+    Interested in youth skill development, technology,
+    innovation or entrepreneurship partnerships?
+    Contact CGBS to discuss potential collaboration
+    and programme opportunities.
+  </p>
+
+  <a class="button"
+     href="mailto:support@cgbs-org.in?subject=CGBS%20Ignite%20Enquiry">
+    Contact CGBS
+  </a>
+
+  <a class="button secondary" href="index.html">
+    Visit CGBS Homepage
+  </a>
+
+</section>
+
+<footer>
+
+  <p>
+    <strong>CHATRAPATI GRAMVIKAS BHAUUDHASHIYA SANSTHA (CGBS)</strong>
+  </p>
+
+  <p>Service • Empowerment • Values</p>
+
+  <p>Promoting Social Progress and Better Life</p>
+
+  <p>Pune, Maharashtra, India</p>
+
+  <p>&copy; CGBS. All rights reserved.</p>
+
+</footer>
+
+</body>
+  </html>
