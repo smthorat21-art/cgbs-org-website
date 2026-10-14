@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saksham Nari Sugandh Sutra | CGBS Pune</title>
+<meta name="description" content="Explore attars, perfumes, organic agarbatti, dhoop and natural room fresheners through Saksham Nari Sugandh Sutra, supported by CGBS Pune.">
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5faf6;color:#234438}
+header{background:white;padding:12px;display:flex;align-items:center;gap:10px;border-bottom:1px solid #ddd}
+.logo{width:55px;height:55px;object-fit:contain}
+.brand{flex:1}
+.brand h1{font-size:15px;margin:0 0 5px}
+.brand p{font-size:11px;margin:0;color:#557366}
+.home{color:#087952;border:1px solid #b8d8ca;border-radius:20px;padding:8px;text-decoration:none;font-size:12px}
+.hero{background:linear-gradient(135deg,#087f52,#20a76f);color:white;text-align:center;padding:35px 18px}
+.hero h2{font-family:Georgia,serif;font-size:27px;margin:0 0 12px}
+.hero p{line-height:1.7}
+.intro{text-align:center;background:#eaf8f1;padding:24px 16px}
+.intro h2{font-family:Georgia,serif}
+.products{max-width:1200px;margin:auto;padding:25px 12px 65px}
+.products>h2{text-align:center;font-family:Georgia,serif;font-size:27px}
+.products>p{text-align:center;color:#65756d;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:25px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 4px 14px #00000010;display:flex;flex-direction:column}
+.card img{width:100%;height:260px;object-fit:contain;background:white;padding:7px}
+.card-body{padding:12px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:16px;margin:0}
+.card p{font-size:13px;line-height:1.5;color:#617168;flex:1}
+.order{display:block;text-align:center;padding:12px 5px;margin-top:7px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:13px}
+.single{background:#087f52;color:white}
+.bulk{background:#e4f3e9;color:#245b43}
+.gift{background:#fff0d4;color:#704b16}
+.note{background:#fff7e5;text-align:center;padding:16px;margin-top:25px;border-radius:12px;font-size:13px;line-height:1.7}
+footer{background:#075b3e;color:white;text-align:center;padding:25px 12px;font-size:13px;line-height:1.8}
+footer a{color:white}
+.whatsapp-float{position:fixed;bottom:18px;right:12px;z-index:9999;background:#25D366;color:white;padding:14px 17px;border-radius:30px;text-decoration:none;font-weight:bold;font-size:13px;box-shadow:0 4px 12px #0004}
+@media(max-width:700px){
+.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card img{height:190px}
+.card-body{padding:9px}
+.card h3{font-size:14px}
+.card p{font-size:12px}
+.brand h1{font-size:12px}
+.home{font-size:11px}
+}
+@media(max-width:380px){
+.grid{grid-template-columns:1fr}
+.card img{height:260px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<a href="index.html">
+<img class="logo" src="CGBS-logo.png" alt="CGBS Logo">
+</a>
+<div class="brand">
+<h1>CHATRAPATI GRAMVIKAS BHAUUDHASHIYA SANSTHA</h1>
+<p>Promoting Social Progress and Better Life</p>
+</div>
+<a class="home" href="index.html">← Home</a>
+</header>
+
+<section class="hero">
+<h2>Saksham Nari Sugandh Sutra</h2>
+<p>Natural Fragrances • Organic Agarbatti • Dhoop Products<br>
+Supporting Rural & Tribal Women Entrepreneurs</p>
+</section>
+
+<section class="intro">
+<h2>Fragrance with a Purpose</h2>
+<p>Explore traditional fragrance products and discover products offered through our women entrepreneurship initiative.</p>
+</section>
+
+<main class="products">
+<h2>Explore Our Products</h2>
+<p>Select a product to enquire about its price, availability, bulk purchase or gift delivery.</p>
+
+<div class="grid" id="productGrid"></div>
+
+<div class="note">
+<strong>🛍️ Single Order &nbsp; 📦 Bulk Order &nbsp; 🎁 Gift Order</strong><br>
+Prices and availability will be confirmed on WhatsApp.<br>
+For a gift order, please mention the recipient's name and delivery details.
+</div>
+</main>
+
+<footer>
+<strong>CHATRAPATI GRAMVIKAS BHAUUDHASHIYA SANSTHA (CGBS)</strong><br>
+Promoting Social Progress and Better Life<br>
+Pune, Maharashtra, India<br>
+<a href="mailto:support@cgbs-org.in">support@cgbs-org.in</a>
+</footer>
+
+<a class="whatsapp-float"
+href="https://wa.me/917507631794?text=Hello%20CGBS%2C%20I%20want%20to%20enquire%20about%20Sugandh%20Sutra%20products."
+target="_blank" rel="noopener">
+Order on WhatsApp
+</a>
+
+<script>
+const products = [
+{
+name:"Non-Alcoholic Attar Collection",
+image:"Screenshot_20261014_194109_Google.jpg",
+description:"Explore the available fragrance collection."
+},
+{
+name:"Achleshwar Khas Attar",
+image:"Screenshot_20261014_194223_Google.jpg",
+description:"Traditional attar fragrance. Ask us about availability."
+},
+{
+name:"Attars & Perfumes",
+image:"Screenshot_20261014_194351_Google.jpg",
+description:"Explore traditional attars and perfume products."
+},
+{
+name:"Organic Agarbatti",
+image:"Screenshot_20261014_194435_Google.jpg",
+description:"Agarbatti made from repurposed flowers."
+},
+{
+name:"Organic Dhoop Cup",
+image:"Screenshot_20261014_194646_Google.jpg",
+description:"Traditional dhoop cups for your prayer space."
+},
+{
+name:"Natural Dhoop Products",
+image:"Screenshot_20261014_194739_Google.jpg",
+description:"Explore traditional dhoop products."
+},
+{
+name:"Cow-Dung Dhoop Products",
+image:"Screenshot_20261014_194845_Google.jpg",
+description:"Traditional fragrance products made using cow dung."
+},
+{
+name:"Organic Dhoop Cones",
+image:"Screenshot_20261014_202412_Google.jpg",
+description:"Dhoop cones for traditional fragrance."
+},
+{
+name:"Dhoop Cups",
+image:"Screenshot_20261014_202439_Google.jpg",
+description:"Ask about available dhoop cup products."
+},
+{
+name:"Dhoop Sticks",
+image:"Screenshot_20261014_202616_Google.jpg",
+description:"Traditional incense products for everyday use."
+},
+{
+name:"Natural Fragrance Products",
+image:"Screenshot_20261014_202753_Google.jpg",
+description:"Explore fragrance products for your home."
+},
+{
+name:"Organic Incense",
+image:"Screenshot_20261014_202817_Google.jpg",
+description:"Discover traditional incense products."
+},
+{
+name:"Attar Collection",
+image:"Screenshot_20261014_202846_Google.jpg",
+description:"Contact us to enquire about available fragrances."
+},
+{
+name:"Traditional Fragrance",
+image:"Screenshot_20261014_202915_Google.jpg",
+description:"Ask us about product details and availability."
+},
+{
+name:"Natural Room Fragrance",
+image:"Screenshot_20261014_202945_Google.jpg",
+description:"Explore fragrance options for your home."
+},
+{
+name:"Organic Fragrance Products",
+image:"Screenshot_20261014_203013_Google.jpg",
+description:"Traditional fragrance products from our collection."
+},
+{
+name:"Dhoop & Incense",
+image:"Screenshot_20261014_203037_Google.jpg",
+description:"Contact us for details about available products."
+},
+{
+name:"Natural Dhoop Products",
+image:"Screenshot_20261014_203103_Google.jpg",
+description:"Explore our traditional dhoop collection."
+},
+{
+name:"Attar & Perfume Collection",
+image:"Screenshot_20261014_203726_Google.jpg",
+description:"Ask about available fragrances and gift options."
+},
+{
+name:"Sugandh Sutra Products",
+image:"Screenshot_20261014_203824_Google.jpg",
+description:"Contact CGBS for product availability and orders."
+}
+];
+
+const grid=document.getElementById("productGrid");
+
+products.forEach((product,index)=>{
+const message=(type)=>
+`Hello CGBS, I want to enquire about ${product.name}. Order type: ${type}. Please share price and availability.`;
+
+const card=document.createElement("article");
+card.className="card";
+
+card.innerHTML=`
+<img src="${product.image}" alt="${product.name}" loading="lazy"
+onerror="this.alt='Product photo unavailable';this.style.background='#f5faf6'">
+
+<div class="card-body">
+<h3>${product.name}</h3>
+<p>${product.description}</p>
+
+<a class="order single" target="_blank" rel="noopener"
+href="https://wa.me/917507631794?text=${encodeURIComponent(message("Single Order"))}">
+🛍️ Single Order</a>
+
+<a class="order bulk" target="_blank" rel="noopener"
+href="https://wa.me/917507631794?text=${encodeURIComponent(message("Bulk Order"))}">
+📦 Bulk Order</a>
+
+<a class="order gift" target="_blank" rel="noopener"
+href="https://wa.me/917507631794?text=${encodeURIComponent(message("Gift Order"))}">
+🎁 Gift Order</a>
+</div>`;
+
+grid.appendChild(card);
+});
+</script>
+
+</body>
+</html>
