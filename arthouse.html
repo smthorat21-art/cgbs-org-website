@@ -605,53 +605,143 @@ function makeOrderLink(product, orderType) {
     name: "Fabric Frame",
     image: "Screenshot_20261014_203726_Google.jpg",
     description: "Handmade fabric artwork."
-  },
+const products = [
   {
     category: "Home Décor & Wall Hangings",
-    name: "Decorative Fabric Frame",
-    image: "Screenshot_20261014_203824_Google.jpg",
-    description: "Unique handmade home décor."
-  },
-  {
-    category: "Home Décor & Wall Hangings",
-    name: "Festive Handmade Decoration",
-    image: "Screenshot_20261014_211837_Google.jpg",
-    description: "Handmade decoration for celebrations."
+    name: "Traditional Handmade Flower Garland",
+    image: "Screenshot_20261014_194109_Google.jpg",
+    description: "Colourful handmade decoration."
   },
   {
     category: "Home Décor & Wall Hangings",
     name: "Traditional Decorative Item",
-    image: "Screenshot_20261014_211913_Google.jpg",
-    description: "Explore this handmade product."
-  },
-  {
-    category: "Home Décor & Wall Hangings",
-    name: "Handmade Home Decoration",
-    image: "Screenshot_20261014_211954_Google.jpg",
-    description: "Decorative handmade craft."
-  },
-  {
-    category: "Home Décor & Wall Hangings",
-    name: "Traditional Home Décor",
-    image: "Screenshot_20261014_212026_Google.jpg",
-    description: "Beautiful decorative product."
+    image: "Screenshot_20261014_194223_Google.jpg",
+    description: "Handcrafted decorative product."
   },
   {
     category: "Home Décor & Wall Hangings",
     name: "Handmade Decorative Product",
-    image: "Screenshot_20261014_212059_Google.jpg",
-    description: "Ask us for product details."
+    image: "Screenshot_20261014_194351_Google.jpg",
+    description: "Beautiful handmade décor."
   },
   {
     category: "Home Décor & Wall Hangings",
-    name: "Handcrafted Décor",
-    image: "Screenshot_20261014_212139_Google.jpg",
+    name: "Traditional Handmade Décor",
+    image: "Screenshot_20261014_194435_Google.jpg",
+    description: "Made with care by skilled artisans."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Decorative Fabric Product",
+    image: "Screenshot_20261014_194646_Google.jpg",
+    description: "Traditional handmade craft."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Colourful Handmade Craft",
+    image: "Screenshot_20261014_194739_Google.jpg",
+    description: "A beautiful handmade creation."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Traditional Decorative Craft",
+    image: "Screenshot_20261014_194845_Google.jpg",
     description: "Handcrafted by creative artisans."
   },
   {
+    category: "Traditional Jewellery",
+    name: "Handmade Jewellery",
+    image: "Screenshot_20261014_202412_Google.jpg",
+    description: "Traditional handmade accessories."
+  },
+  {
+    category: "Traditional Jewellery",
+    name: "Decorative Handmade Item",
+    image: "Screenshot_20261014_202439_Google.jpg",
+    description: "Explore our handmade collection."
+  },
+  {
     category: "Home Décor & Wall Hangings",
-    name: "Handmade Craft Collection",
-    image: "Screenshot_20261014_212208_Google.jpg",
+    name: "Traditional Fabric Craft",
+    image: "Screenshot_20261014_202616_Google.jpg",
+    description: "Handcrafted fabric décor."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Handmade Decorative Item",
+    image: "Screenshot_20261014_202753_Google.jpg",
+    description: "Traditional decorative product."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Colourful Handmade Décor",
+    image: "Screenshot_20261014_202817_Google.jpg",
+    description: "A beautiful handmade creation."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Traditional Handmade Craft",
+    image: "Screenshot_20261014_202846_Google.jpg",
+    description: "Made with care by artisans."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Decorative Fabric Product",
+    image: "Screenshot_20261014_202915_Google.jpg",
+    description: "Traditional fabric artwork."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Handmade Decorative Craft",
+    image: "Screenshot_20261014_202945_Google.jpg",
+    description: "Beautiful handmade décor."
+  },
+  {
+    category: "Puja Décor & Gifts",
+    name: "Traditional Puja Decoration",
+    image: "Screenshot_20261014_203013_Google.jpg",
+    description: "Traditional item for festive occasions."
+  },
+  {
+    category: "Puja Décor & Gifts",
+    name: "Decorative Puja Accessory",
+    image: "Screenshot_20261014_203037_Google.jpg",
+    description: "Enquire about available products."
+  },
+  {
+    category: "Puja Décor & Gifts",
+    name: "Traditional Chaurang Cover",
+    image: "Screenshot_20261014_203103_Google.jpg",
+    description: "Decorative cover for puja arrangements."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Handmade Fabric Frame",
+    image: "Screenshot_20261014_203726_Google.jpg",
+    description: "Decorative fabric artwork."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Ethnic Fabric Frame",
+    image: "Screenshot_20261014_203824_Google.jpg",
+    description: "Decorative frame for your home."
+  },
+  {
+    category: "Home Décor & Wall Hangings",
+    name: "Traditional Door Toran",
+    image: "Screenshot_20261014_211837_Google.jpg",
+    description: "Festive decoration for doorways."
+  },
+  {
+    category: "Puja Décor & Gifts",
+    name: "Traditional Puja Product",
+    image: "Screenshot_20261014_211913_Google.jpg",
+    description: "Traditional item for festive rituals."
+  },
+  {
+    category: "Puja Décor & Gifts",
+    name: "Handmade Decorative Product",
+    image: "Screenshot_20261014_211954_Google.jpg",
     description: "Explore our handmade collection."
   }
 ];
