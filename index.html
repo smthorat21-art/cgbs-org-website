@@ -68,4 +68,18 @@
     <img src="https://cgbs-org.in/CGBS-logo.png" alt="CGBS Official Logo">
   </button>
 </div>
-</body></html>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function () {
+    navigator.serviceWorker.register("/service-worker.js")
+      .then(function () {
+        console.log("CGBS PWA service worker registered");
+      })
+      .catch(function (error) {
+        console.error("Service worker registration failed:", error);
+      });
+  });
+}
+</script>
+</body>
+</html>
